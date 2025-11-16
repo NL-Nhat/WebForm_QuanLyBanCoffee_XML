@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="_x0027_HUYMON_x0027_" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="_x0027_HUYMON_x0027_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MaHuy" type="xs:int" minOccurs="0" />
+                <xs:element name="MaOder" type="xs:int" minOccurs="0" />
+                <xs:element name="MaBan" type="xs:int" minOccurs="0" />
+                <xs:element name="MaSanPham" type="xs:int" minOccurs="0" />
+                <xs:element name="LyDo" type="xs:string" minOccurs="0" />
+                <xs:element name="ThoiGianHuy" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <_x0027_HUYMON_x0027_>
+    <MaHuy>1</MaHuy>
+    <MaOder>7</MaOder>
+    <MaBan>7</MaBan>
+    <MaSanPham>5</MaSanPham>
+    <LyDo>Khách đổi món</LyDo>
+    <ThoiGianHuy>2025-11-17T00:00:52.7+07:00</ThoiGianHuy>
+  </_x0027_HUYMON_x0027_>
+  <_x0027_HUYMON_x0027_>
+    <MaHuy>2</MaHuy>
+    <MaOder>8</MaOder>
+    <MaBan>8</MaBan>
+    <MaSanPham>9</MaSanPham>
+    <LyDo>Món pha nhầm</LyDo>
+    <ThoiGianHuy>2025-11-17T00:00:52.7+07:00</ThoiGianHuy>
+  </_x0027_HUYMON_x0027_>
+</NewDataSet>

@@ -1,0 +1,78 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="_x0027_NHANVIEN_x0027_" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="_x0027_NHANVIEN_x0027_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MaNhanVien" type="xs:int" minOccurs="0" />
+                <xs:element name="TenNhanVien" type="xs:string" minOccurs="0" />
+                <xs:element name="GioiTinh" type="xs:string" minOccurs="0" />
+                <xs:element name="NgaySinh" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="SDT" type="xs:string" minOccurs="0" />
+                <xs:element name="DiaChi" type="xs:string" minOccurs="0" />
+                <xs:element name="MaTaiKhoan" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <_x0027_NHANVIEN_x0027_>
+    <MaNhanVien>1</MaNhanVien>
+    <TenNhanVien>Nguyễn Văn Admin</TenNhanVien>
+    <GioiTinh>Nam</GioiTinh>
+    <NgaySinh>1990-01-01T00:00:00+07:00</NgaySinh>
+    <SDT>0909000001</SDT>
+    <DiaChi>Hà Nội</DiaChi>
+    <MaTaiKhoan>1</MaTaiKhoan>
+  </_x0027_NHANVIEN_x0027_>
+  <_x0027_NHANVIEN_x0027_>
+    <MaNhanVien>2</MaNhanVien>
+    <TenNhanVien>Lê Văn A</TenNhanVien>
+    <GioiTinh>Nam</GioiTinh>
+    <NgaySinh>1995-05-01T00:00:00+07:00</NgaySinh>
+    <SDT>0909000002</SDT>
+    <DiaChi>Hà Nội</DiaChi>
+    <MaTaiKhoan>2</MaTaiKhoan>
+  </_x0027_NHANVIEN_x0027_>
+  <_x0027_NHANVIEN_x0027_>
+    <MaNhanVien>3</MaNhanVien>
+    <TenNhanVien>Trần Thị B</TenNhanVien>
+    <GioiTinh>Nữ</GioiTinh>
+    <NgaySinh>1998-03-10T00:00:00+07:00</NgaySinh>
+    <SDT>0909000003</SDT>
+    <DiaChi>Hải Phòng</DiaChi>
+    <MaTaiKhoan>3</MaTaiKhoan>
+  </_x0027_NHANVIEN_x0027_>
+  <_x0027_NHANVIEN_x0027_>
+    <MaNhanVien>4</MaNhanVien>
+    <TenNhanVien>Phạm Văn C</TenNhanVien>
+    <GioiTinh>Nam</GioiTinh>
+    <NgaySinh>1999-07-15T00:00:00+07:00</NgaySinh>
+    <SDT>0909000004</SDT>
+    <DiaChi>Hà Nam</DiaChi>
+    <MaTaiKhoan>4</MaTaiKhoan>
+  </_x0027_NHANVIEN_x0027_>
+  <_x0027_NHANVIEN_x0027_>
+    <MaNhanVien>5</MaNhanVien>
+    <TenNhanVien>Hoàng Thị D</TenNhanVien>
+    <GioiTinh>Nữ</GioiTinh>
+    <NgaySinh>2000-11-25T00:00:00+07:00</NgaySinh>
+    <SDT>0909000005</SDT>
+    <DiaChi>Ninh Bình</DiaChi>
+    <MaTaiKhoan>5</MaTaiKhoan>
+  </_x0027_NHANVIEN_x0027_>
+  <_x0027_NHANVIEN_x0027_>
+    <MaNhanVien>6</MaNhanVien>
+    <TenNhanVien>Nguyễn Văn E</TenNhanVien>
+    <GioiTinh>Nam</GioiTinh>
+    <NgaySinh>2001-09-20T00:00:00+07:00</NgaySinh>
+    <SDT>0909000006</SDT>
+    <DiaChi>Nam Định</DiaChi>
+    <MaTaiKhoan>6</MaTaiKhoan>
+  </_x0027_NHANVIEN_x0027_>
+</NewDataSet>

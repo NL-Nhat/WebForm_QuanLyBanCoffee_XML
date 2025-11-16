@@ -1,0 +1,141 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="_x0027_BAN_x0027_" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="_x0027_BAN_x0027_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MaBan" type="xs:int" minOccurs="0" />
+                <xs:element name="TenBan" type="xs:string" minOccurs="0" />
+                <xs:element name="MaTang" type="xs:int" minOccurs="0" />
+                <xs:element name="TrangThai" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <_x0027_BAN_x0027_>
+    <MaBan>1</MaBan>
+    <TenBan>Bàn 1</TenBan>
+    <MaTang>1</MaTang>
+    <TrangThai>Có khách</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>2</MaBan>
+    <TenBan>Bàn 2</TenBan>
+    <MaTang>1</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>3</MaBan>
+    <TenBan>Bàn 3</TenBan>
+    <MaTang>1</MaTang>
+    <TrangThai>Có khách</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>4</MaBan>
+    <TenBan>Bàn 4</TenBan>
+    <MaTang>1</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>5</MaBan>
+    <TenBan>Bàn 5</TenBan>
+    <MaTang>1</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>6</MaBan>
+    <TenBan>Bàn 6</TenBan>
+    <MaTang>1</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>7</MaBan>
+    <TenBan>Bàn 7</TenBan>
+    <MaTang>1</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>8</MaBan>
+    <TenBan>Bàn 8</TenBan>
+    <MaTang>1</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>9</MaBan>
+    <TenBan>Bàn 9</TenBan>
+    <MaTang>1</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>10</MaBan>
+    <TenBan>Bàn 10</TenBan>
+    <MaTang>1</MaTang>
+    <TrangThai>Có khách</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>11</MaBan>
+    <TenBan>Bàn 1</TenBan>
+    <MaTang>2</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>12</MaBan>
+    <TenBan>Bàn 2</TenBan>
+    <MaTang>2</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>13</MaBan>
+    <TenBan>Bàn 3</TenBan>
+    <MaTang>2</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>14</MaBan>
+    <TenBan>Bàn 4</TenBan>
+    <MaTang>2</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>15</MaBan>
+    <TenBan>Bàn 5</TenBan>
+    <MaTang>2</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>16</MaBan>
+    <TenBan>Bàn 6</TenBan>
+    <MaTang>2</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>17</MaBan>
+    <TenBan>Bàn 7</TenBan>
+    <MaTang>2</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>18</MaBan>
+    <TenBan>Bàn 8</TenBan>
+    <MaTang>2</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>19</MaBan>
+    <TenBan>Bàn 9</TenBan>
+    <MaTang>2</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+  <_x0027_BAN_x0027_>
+    <MaBan>20</MaBan>
+    <TenBan>Bàn 10</TenBan>
+    <MaTang>2</MaTang>
+    <TrangThai>Trống</TrangThai>
+  </_x0027_BAN_x0027_>
+</NewDataSet>

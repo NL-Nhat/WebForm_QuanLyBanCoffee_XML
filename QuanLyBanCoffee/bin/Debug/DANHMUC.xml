@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="_x0027_DANHMUC_x0027_" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="_x0027_DANHMUC_x0027_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MaDanhMuc" type="xs:int" minOccurs="0" />
+                <xs:element name="TenDanhMuc" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <_x0027_DANHMUC_x0027_>
+    <MaDanhMuc>1</MaDanhMuc>
+    <TenDanhMuc>Cà phê</TenDanhMuc>
+  </_x0027_DANHMUC_x0027_>
+  <_x0027_DANHMUC_x0027_>
+    <MaDanhMuc>2</MaDanhMuc>
+    <TenDanhMuc>Sinh tố</TenDanhMuc>
+  </_x0027_DANHMUC_x0027_>
+  <_x0027_DANHMUC_x0027_>
+    <MaDanhMuc>3</MaDanhMuc>
+    <TenDanhMuc>Matcha</TenDanhMuc>
+  </_x0027_DANHMUC_x0027_>
+  <_x0027_DANHMUC_x0027_>
+    <MaDanhMuc>4</MaDanhMuc>
+    <TenDanhMuc>Khác</TenDanhMuc>
+  </_x0027_DANHMUC_x0027_>
+</NewDataSet>

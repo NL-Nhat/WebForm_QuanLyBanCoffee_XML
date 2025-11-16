@@ -1,0 +1,64 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="_x0027_TAIKHOAN_x0027_" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="_x0027_TAIKHOAN_x0027_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MaTaiKhoan" type="xs:int" minOccurs="0" />
+                <xs:element name="TenDangNhap" type="xs:string" minOccurs="0" />
+                <xs:element name="MatKhau" type="xs:string" minOccurs="0" />
+                <xs:element name="LoaiTaiKhoan" type="xs:string" minOccurs="0" />
+                <xs:element name="TrangThai" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <_x0027_TAIKHOAN_x0027_>
+    <MaTaiKhoan>1</MaTaiKhoan>
+    <TenDangNhap>admin</TenDangNhap>
+    <MatKhau>123</MatKhau>
+    <LoaiTaiKhoan>Admin</LoaiTaiKhoan>
+    <TrangThai>true</TrangThai>
+  </_x0027_TAIKHOAN_x0027_>
+  <_x0027_TAIKHOAN_x0027_>
+    <MaTaiKhoan>2</MaTaiKhoan>
+    <TenDangNhap>nv1</TenDangNhap>
+    <MatKhau>123</MatKhau>
+    <LoaiTaiKhoan>Nhân viên</LoaiTaiKhoan>
+    <TrangThai>true</TrangThai>
+  </_x0027_TAIKHOAN_x0027_>
+  <_x0027_TAIKHOAN_x0027_>
+    <MaTaiKhoan>3</MaTaiKhoan>
+    <TenDangNhap>nv2</TenDangNhap>
+    <MatKhau>123</MatKhau>
+    <LoaiTaiKhoan>Nhân viên</LoaiTaiKhoan>
+    <TrangThai>true</TrangThai>
+  </_x0027_TAIKHOAN_x0027_>
+  <_x0027_TAIKHOAN_x0027_>
+    <MaTaiKhoan>4</MaTaiKhoan>
+    <TenDangNhap>nv3</TenDangNhap>
+    <MatKhau>123</MatKhau>
+    <LoaiTaiKhoan>Nhân viên</LoaiTaiKhoan>
+    <TrangThai>true</TrangThai>
+  </_x0027_TAIKHOAN_x0027_>
+  <_x0027_TAIKHOAN_x0027_>
+    <MaTaiKhoan>5</MaTaiKhoan>
+    <TenDangNhap>nv4</TenDangNhap>
+    <MatKhau>123</MatKhau>
+    <LoaiTaiKhoan>Nhân viên</LoaiTaiKhoan>
+    <TrangThai>true</TrangThai>
+  </_x0027_TAIKHOAN_x0027_>
+  <_x0027_TAIKHOAN_x0027_>
+    <MaTaiKhoan>6</MaTaiKhoan>
+    <TenDangNhap>nv5</TenDangNhap>
+    <MatKhau>123</MatKhau>
+    <LoaiTaiKhoan>Nhân viên</LoaiTaiKhoan>
+    <TrangThai>true</TrangThai>
+  </_x0027_TAIKHOAN_x0027_>
+</NewDataSet>

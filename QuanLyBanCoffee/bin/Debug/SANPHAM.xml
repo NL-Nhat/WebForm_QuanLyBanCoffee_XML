@@ -1,0 +1,302 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="_x0027_SANPHAM_x0027_" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="_x0027_SANPHAM_x0027_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MaSanPham" type="xs:int" minOccurs="0" />
+                <xs:element name="TenSanPham" type="xs:string" minOccurs="0" />
+                <xs:element name="DonGia" type="xs:decimal" minOccurs="0" />
+                <xs:element name="MaDanhMuc" type="xs:int" minOccurs="0" />
+                <xs:element name="HinhAnhURL" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>1</MaSanPham>
+    <TenSanPham>Cà phê đen đá</TenSanPham>
+    <DonGia>25000.00</DonGia>
+    <MaDanhMuc>1</MaDanhMuc>
+    <HinhAnhURL>denda.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>2</MaSanPham>
+    <TenSanPham>Cà phê sữa đá</TenSanPham>
+    <DonGia>28000.00</DonGia>
+    <MaDanhMuc>1</MaDanhMuc>
+    <HinhAnhURL>suada.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>3</MaSanPham>
+    <TenSanPham>Americano nóng</TenSanPham>
+    <DonGia>35000.00</DonGia>
+    <MaDanhMuc>1</MaDanhMuc>
+    <HinhAnhURL>ame.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>4</MaSanPham>
+    <TenSanPham>Latte</TenSanPham>
+    <DonGia>40000.00</DonGia>
+    <MaDanhMuc>1</MaDanhMuc>
+    <HinhAnhURL>latte.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>5</MaSanPham>
+    <TenSanPham>Cappuccino</TenSanPham>
+    <DonGia>40000.00</DonGia>
+    <MaDanhMuc>1</MaDanhMuc>
+    <HinhAnhURL>cappu.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>6</MaSanPham>
+    <TenSanPham>Espresso</TenSanPham>
+    <DonGia>30000.00</DonGia>
+    <MaDanhMuc>1</MaDanhMuc>
+    <HinhAnhURL>espres.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>7</MaSanPham>
+    <TenSanPham>Bạc xỉu</TenSanPham>
+    <DonGia>32000.00</DonGia>
+    <MaDanhMuc>1</MaDanhMuc>
+    <HinhAnhURL>bacsiu.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>8</MaSanPham>
+    <TenSanPham>Mocha</TenSanPham>
+    <DonGia>45000.00</DonGia>
+    <MaDanhMuc>1</MaDanhMuc>
+    <HinhAnhURL>mocha.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>9</MaSanPham>
+    <TenSanPham>Cold Brew</TenSanPham>
+    <DonGia>42000.00</DonGia>
+    <MaDanhMuc>1</MaDanhMuc>
+    <HinhAnhURL>cold.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>10</MaSanPham>
+    <TenSanPham>Cà phê trứng</TenSanPham>
+    <DonGia>48000.00</DonGia>
+    <MaDanhMuc>1</MaDanhMuc>
+    <HinhAnhURL>trung.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>11</MaSanPham>
+    <TenSanPham>Sinh tố bơ</TenSanPham>
+    <DonGia>45000.00</DonGia>
+    <MaDanhMuc>2</MaDanhMuc>
+    <HinhAnhURL>bo.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>12</MaSanPham>
+    <TenSanPham>Sinh tố xoài</TenSanPham>
+    <DonGia>42000.00</DonGia>
+    <MaDanhMuc>2</MaDanhMuc>
+    <HinhAnhURL>xoai.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>13</MaSanPham>
+    <TenSanPham>Sinh tố dâu</TenSanPham>
+    <DonGia>48000.00</DonGia>
+    <MaDanhMuc>2</MaDanhMuc>
+    <HinhAnhURL>dau.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>14</MaSanPham>
+    <TenSanPham>Sinh tố mãng cầu</TenSanPham>
+    <DonGia>40000.00</DonGia>
+    <MaDanhMuc>2</MaDanhMuc>
+    <HinhAnhURL>mangcau.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>15</MaSanPham>
+    <TenSanPham>Sinh tố chuối yến mạch</TenSanPham>
+    <DonGia>50000.00</DonGia>
+    <MaDanhMuc>2</MaDanhMuc>
+    <HinhAnhURL>chuoi.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>16</MaSanPham>
+    <TenSanPham>Sinh tố cam cà rốt</TenSanPham>
+    <DonGia>42000.00</DonGia>
+    <MaDanhMuc>2</MaDanhMuc>
+    <HinhAnhURL>carot.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>17</MaSanPham>
+    <TenSanPham>Sinh tố việt quất</TenSanPham>
+    <DonGia>52000.00</DonGia>
+    <MaDanhMuc>2</MaDanhMuc>
+    <HinhAnhURL>vietquat.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>18</MaSanPham>
+    <TenSanPham>Sinh tố rau má</TenSanPham>
+    <DonGia>38000.00</DonGia>
+    <MaDanhMuc>2</MaDanhMuc>
+    <HinhAnhURL>rauma.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>19</MaSanPham>
+    <TenSanPham>Sinh tố sapoche</TenSanPham>
+    <DonGia>45000.00</DonGia>
+    <MaDanhMuc>2</MaDanhMuc>
+    <HinhAnhURL>sapoche.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>20</MaSanPham>
+    <TenSanPham>Sinh tố thập cẩm</TenSanPham>
+    <DonGia>55000.00</DonGia>
+    <MaDanhMuc>2</MaDanhMuc>
+    <HinhAnhURL>thapcam.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>21</MaSanPham>
+    <TenSanPham>Trà sữa Matcha</TenSanPham>
+    <DonGia>40000.00</DonGia>
+    <MaDanhMuc>3</MaDanhMuc>
+    <HinhAnhURL>matcha.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>22</MaSanPham>
+    <TenSanPham>Matcha đá xay</TenSanPham>
+    <DonGia>48000.00</DonGia>
+    <MaDanhMuc>3</MaDanhMuc>
+    <HinhAnhURL>daxay.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>23</MaSanPham>
+    <TenSanPham>Latte Matcha nóng</TenSanPham>
+    <DonGia>45000.00</DonGia>
+    <MaDanhMuc>3</MaDanhMuc>
+    <HinhAnhURL>matchanong.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>24</MaSanPham>
+    <TenSanPham>Matcha nguyên chất</TenSanPham>
+    <DonGia>38000.00</DonGia>
+    <MaDanhMuc>3</MaDanhMuc>
+    <HinhAnhURL>nguyenchat.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>25</MaSanPham>
+    <TenSanPham>Matcha dâu</TenSanPham>
+    <DonGia>50000.00</DonGia>
+    <MaDanhMuc>3</MaDanhMuc>
+    <HinhAnhURL>matchadau.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>26</MaSanPham>
+    <TenSanPham>Matcha kem phô mai</TenSanPham>
+    <DonGia>55000.00</DonGia>
+    <MaDanhMuc>3</MaDanhMuc>
+    <HinhAnhURL>phomai.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>27</MaSanPham>
+    <TenSanPham>Matcha đậu đỏ</TenSanPham>
+    <DonGia>42000.00</DonGia>
+    <MaDanhMuc>3</MaDanhMuc>
+    <HinhAnhURL>daudo.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>28</MaSanPham>
+    <TenSanPham>Matcha cốt dừa</TenSanPham>
+    <DonGia>48000.00</DonGia>
+    <MaDanhMuc>3</MaDanhMuc>
+    <HinhAnhURL>cotdua.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>29</MaSanPham>
+    <TenSanPham>Matcha trà xanh</TenSanPham>
+    <DonGia>35000.00</DonGia>
+    <MaDanhMuc>3</MaDanhMuc>
+    <HinhAnhURL>xanh.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>30</MaSanPham>
+    <TenSanPham>Matcha kem tươi</TenSanPham>
+    <DonGia>50000.00</DonGia>
+    <MaDanhMuc>3</MaDanhMuc>
+    <HinhAnhURL>kemtuoi.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>31</MaSanPham>
+    <TenSanPham>Trà đào cam sả</TenSanPham>
+    <DonGia>38000.00</DonGia>
+    <MaDanhMuc>4</MaDanhMuc>
+    <HinhAnhURL>camsa.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>32</MaSanPham>
+    <TenSanPham>Trà vải</TenSanPham>
+    <DonGia>35000.00</DonGia>
+    <MaDanhMuc>4</MaDanhMuc>
+    <HinhAnhURL>vai.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>33</MaSanPham>
+    <TenSanPham>Sô cô la nóng</TenSanPham>
+    <DonGia>45000.00</DonGia>
+    <MaDanhMuc>4</MaDanhMuc>
+    <HinhAnhURL>socola.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>34</MaSanPham>
+    <TenSanPham>Nước ép cam</TenSanPham>
+    <DonGia>40000.00</DonGia>
+    <MaDanhMuc>4</MaDanhMuc>
+    <HinhAnhURL>cam.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>35</MaSanPham>
+    <TenSanPham>Sữa tươi trân châu đường đen</TenSanPham>
+    <DonGia>45000.00</DonGia>
+    <MaDanhMuc>4</MaDanhMuc>
+    <HinhAnhURL>tranchau.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>36</MaSanPham>
+    <TenSanPham>Soda việt quất</TenSanPham>
+    <DonGia>42000.00</DonGia>
+    <MaDanhMuc>4</MaDanhMuc>
+    <HinhAnhURL>sodavq.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>37</MaSanPham>
+    <TenSanPham>Bánh Tiramisu</TenSanPham>
+    <DonGia>55000.00</DonGia>
+    <MaDanhMuc>4</MaDanhMuc>
+    <HinhAnhURL>tira.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>38</MaSanPham>
+    <TenSanPham>Bánh Red Velvet</TenSanPham>
+    <DonGia>50000.00</DonGia>
+    <MaDanhMuc>4</MaDanhMuc>
+    <HinhAnhURL>red.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>39</MaSanPham>
+    <TenSanPham>Bia thủ công</TenSanPham>
+    <DonGia>60000.00</DonGia>
+    <MaDanhMuc>4</MaDanhMuc>
+    <HinhAnhURL>bia.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+  <_x0027_SANPHAM_x0027_>
+    <MaSanPham>40</MaSanPham>
+    <TenSanPham>Nước suối</TenSanPham>
+    <DonGia>15000.00</DonGia>
+    <MaDanhMuc>4</MaDanhMuc>
+    <HinhAnhURL>suoi.jpg</HinhAnhURL>
+  </_x0027_SANPHAM_x0027_>
+</NewDataSet>

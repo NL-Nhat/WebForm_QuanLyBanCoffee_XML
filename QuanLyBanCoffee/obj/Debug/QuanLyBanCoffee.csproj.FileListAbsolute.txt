@@ -1,0 +1,17 @@
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\bin\Debug\QuanLyBanCoffee.exe
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\bin\Debug\QuanLyBanCoffee.exe.config
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.csproj.AssemblyReference.cache
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.GUI.frmBan.resources
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.frmMain.resources
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.GUI.frmOrder.resources
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.GUI.pcMon.resources
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.Properties.Resources.resources
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.csproj.GenerateResource.cache
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.csproj.CoreCompileInputs.cache
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.exe
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.pdb
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\bin\Debug\QuanLyBanCoffee.pdb
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.exe.config
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.GUI.UC_DanhThu.resources
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.GUI.UC_DSDH.resources
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.GUI.UC_Ban.resources
