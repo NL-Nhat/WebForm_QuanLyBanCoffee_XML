@@ -1,5 +1,6 @@
 ﻿using QuanLyBanCoffee.Class;
 using QuanLyBanCoffee.GUI;
+using QuanLyBanCoffee.GUI.Admin;
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -36,15 +37,20 @@ namespace QuanLyBanCoffee
             try
             {
                 int maTK = dn.kiemTraDangNhap(username, password);
+
                 if (maTK > 0) { 
+
                     string loaiTK = dn.layLoaiTaiKhoan(maTK);
                     int maNV = dn.layMaNhanVien(maTK);
+
                     if(loaiTK.Equals("Admin"))
                     {
-                        //frmAdmin adminForm = new frmAdmin(maTK, maNV);
-                        //this.Hide();
-                        //adminForm.ShowDialog();
-                        //this.Show();
+                        frmMainAdmin frmadmin = new frmMainAdmin(maNV);
+                        txtMatKhau.Clear();
+                        txtUserName.Clear();
+                        this.Hide();
+                        frmadmin.ShowDialog();
+                        this.Show();
                     }
                     else if(loaiTK.Equals("Nhân viên"))
                     {
@@ -56,9 +62,17 @@ namespace QuanLyBanCoffee
                         this.Show();
                     }
                 }
-                else
+                else if (maTK == -2)
                 {
-                    lbError.Text = "Tên đăng nhập hoặc mật khẩu không đúng, hoặc tài khoản bị khóa!";
+                    lbError.Visible = false; // Ẩn lỗi
+                    MessageBox.Show("Tài khoản này đã bị khóa. Vui lòng liên hệ quản trị viên.",
+                                    "Tài khoản bị khóa",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Warning);
+                }
+                else // (maTK == -1)
+                {
+                    lbError.Text = "Tên đăng nhập hoặc mật khẩu không đúng!";
                     lbError.Visible = true;
                 }
             }
@@ -76,11 +90,20 @@ namespace QuanLyBanCoffee
             }
         }
 
-        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // Lệnh này buộc tất cả các luồng tin nhắn (message loop) phải dừng lại
-            // và kết thúc toàn bộ ứng dụng, bất kể còn bao nhiêu form đang tồn tại.
-            Application.Exit();
+            try
+            {
+                ht.CapNhapSQL();
+            }
+            catch (Exception ex)
+            {
+                // Hiển thị nếu có lỗi nghiêm trọng xảy ra khi đồng bộ
+                MessageBox.Show("Lỗi nghiêm trọng khi đồng bộ dữ liệu lúc thoát: " + ex.Message,
+                                "Lỗi",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+            }
         }
     }
 }

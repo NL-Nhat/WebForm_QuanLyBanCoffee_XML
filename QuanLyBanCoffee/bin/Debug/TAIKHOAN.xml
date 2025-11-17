@@ -61,4 +61,11 @@
     <LoaiTaiKhoan>Nhân viên</LoaiTaiKhoan>
     <TrangThai>true</TrangThai>
   </_x0027_TAIKHOAN_x0027_>
+  <_x0027_TAIKHOAN_x0027_>
+    <MaTaiKhoan>7</MaTaiKhoan>
+    <TenDangNhap>nv6</TenDangNhap>
+    <MatKhau>123</MatKhau>
+    <LoaiTaiKhoan>Nhân viên</LoaiTaiKhoan>
+    <TrangThai>false</TrangThai>
+  </_x0027_TAIKHOAN_x0027_>
 </NewDataSet>

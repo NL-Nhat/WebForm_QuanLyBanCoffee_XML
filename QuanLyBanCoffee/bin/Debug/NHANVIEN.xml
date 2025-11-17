@@ -23,11 +23,11 @@
   </xs:schema>
   <_x0027_NHANVIEN_x0027_>
     <MaNhanVien>1</MaNhanVien>
-    <TenNhanVien>Nguyễn Văn Admin</TenNhanVien>
+    <TenNhanVien>Nguyễn Long Nhật</TenNhanVien>
     <GioiTinh>Nam</GioiTinh>
-    <NgaySinh>1990-01-01T00:00:00+07:00</NgaySinh>
-    <SDT>0909000001</SDT>
-    <DiaChi>Hà Nội</DiaChi>
+    <NgaySinh>2005-11-01T00:00:00+07:00</NgaySinh>
+    <SDT>0909000002</SDT>
+    <DiaChi>Quảng Trị</DiaChi>
     <MaTaiKhoan>1</MaTaiKhoan>
   </_x0027_NHANVIEN_x0027_>
   <_x0027_NHANVIEN_x0027_>
@@ -74,5 +74,14 @@
     <SDT>0909000006</SDT>
     <DiaChi>Nam Định</DiaChi>
     <MaTaiKhoan>6</MaTaiKhoan>
+  </_x0027_NHANVIEN_x0027_>
+  <_x0027_NHANVIEN_x0027_>
+    <MaNhanVien>7</MaNhanVien>
+    <TenNhanVien>Nguyễn Văn F</TenNhanVien>
+    <GioiTinh>Nam</GioiTinh>
+    <NgaySinh>2001-09-20T00:00:00+07:00</NgaySinh>
+    <SDT>0909000006</SDT>
+    <DiaChi>Nam Định</DiaChi>
+    <MaTaiKhoan>7</MaTaiKhoan>
   </_x0027_NHANVIEN_x0027_>
 </NewDataSet>

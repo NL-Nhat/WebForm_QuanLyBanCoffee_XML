@@ -244,7 +244,7 @@ namespace QuanLyBanCoffee.Class
                     if (Convert.ToInt32(row["MaOder"]) == maOrder)
                     {
                         row["TrangThai"] = trangthai;
-                        row["ChietKhau"] = Math.Round(chietKhau,1); // giữ 1 chữ số sau dấu phẩy
+                        row["ChietKhau"] = Math.Round(chietKhau, 1); // giữ 1 chữ số sau dấu phẩy
                         row["ThoiGianThanhToan"] = DateTime.Now;
                         break;
                     }

@@ -18,14 +18,28 @@ namespace QuanLyBanCoffee.Class
             {
                 string duongDan = "TAIKHOAN.xml";
                 DataTable table = fileXml.HienThi(duongDan);
+
+                DataRow userRow = null;
                 foreach (DataRow row in table.Rows)
                 {
-                    if (row["TenDangNhap"].ToString() == tenDangNhap && row["MatKhau"].ToString() == matKhau && Convert.ToBoolean(row["TrangThai"]) == true)
+                    if (row["TenDangNhap"].ToString() == tenDangNhap && row["MatKhau"].ToString() == matKhau)
                     {
-                        return Convert.ToInt32(row["MaTaiKhoan"]);
+                        userRow = row;
+                        break;
                     }
                 }
-                return -1; // Đăng nhập thất bại
+
+                if (userRow == null)
+                {
+                    return -1; // -1 = Sai tên đăng nhập hoặc mật khẩu
+                }
+
+                if (Convert.ToBoolean(userRow["TrangThai"]) == false)
+                {
+                    return -2; // -2 = Tài khoản đã bị khóa
+                }
+
+                return Convert.ToInt32(userRow["MaTaiKhoan"]);
             }
             catch (Exception ex)
             {

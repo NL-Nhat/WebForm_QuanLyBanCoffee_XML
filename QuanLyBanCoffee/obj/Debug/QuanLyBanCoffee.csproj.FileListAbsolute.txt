@@ -12,6 +12,8 @@ D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoff
 D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.pdb
 D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\bin\Debug\QuanLyBanCoffee.pdb
 D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.exe.config
-D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.GUI.UC_DanhThu.resources
 D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.GUI.UC_DSDH.resources
 D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.GUI.UC_Ban.resources
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.GUI.UC_DoanhThu.resources
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.GUI.Admin.frmMainAdmin.resources
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.GUI.Admin.UC_DoUong.resources

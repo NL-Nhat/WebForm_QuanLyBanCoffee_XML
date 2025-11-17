@@ -9,7 +9,6 @@
               <xs:sequence>
                 <xs:element name="MaHuy" type="xs:int" minOccurs="0" />
                 <xs:element name="MaOder" type="xs:int" minOccurs="0" />
-                <xs:element name="MaBan" type="xs:int" minOccurs="0" />
                 <xs:element name="MaSanPham" type="xs:int" minOccurs="0" />
                 <xs:element name="LyDo" type="xs:string" minOccurs="0" />
                 <xs:element name="ThoiGianHuy" type="xs:dateTime" minOccurs="0" />
@@ -23,17 +22,15 @@
   <_x0027_HUYMON_x0027_>
     <MaHuy>1</MaHuy>
     <MaOder>7</MaOder>
-    <MaBan>7</MaBan>
     <MaSanPham>5</MaSanPham>
     <LyDo>Khách đổi món</LyDo>
-    <ThoiGianHuy>2025-11-17T00:00:52.7+07:00</ThoiGianHuy>
+    <ThoiGianHuy>2025-11-18T00:13:44.8+07:00</ThoiGianHuy>
   </_x0027_HUYMON_x0027_>
   <_x0027_HUYMON_x0027_>
     <MaHuy>2</MaHuy>
     <MaOder>8</MaOder>
-    <MaBan>8</MaBan>
     <MaSanPham>9</MaSanPham>
     <LyDo>Món pha nhầm</LyDo>
-    <ThoiGianHuy>2025-11-17T00:00:52.7+07:00</ThoiGianHuy>
+    <ThoiGianHuy>2025-11-18T00:13:44.8+07:00</ThoiGianHuy>
   </_x0027_HUYMON_x0027_>
 </NewDataSet>

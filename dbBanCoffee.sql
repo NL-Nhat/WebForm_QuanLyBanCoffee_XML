@@ -24,7 +24,7 @@ CREATE TABLE TAIKHOAN (
     TenDangNhap NVARCHAR(50) NOT NULL UNIQUE,
     MatKhau NVARCHAR(100) NOT NULL,
     LoaiTaiKhoan NVARCHAR(20) CHECK (LoaiTaiKhoan IN (N'Admin', N'Nhân viên')) NOT NULL default N'Nhân viên',
-    TrangThai BIT DEFAULT 1
+    TrangThai BIT DEFAULT 1 CHECK (TrangThai IN (0, 1))
 );
 CREATE TABLE NHANVIEN (
     MaNhanVien INT IDENTITY(1,1) PRIMARY KEY,
@@ -34,7 +34,7 @@ CREATE TABLE NHANVIEN (
     SDT NVARCHAR(15),
     DiaChi NVARCHAR(200),
     MaTaiKhoan INT UNIQUE,
-    FOREIGN KEY (MaTaiKhoan) REFERENCES TAIKHOAN(MaTaiKhoan)
+    FOREIGN KEY (MaTaiKhoan) REFERENCES TAIKHOAN(MaTaiKhoan) on delete cascade on update cascade
 );
 CREATE TABLE DANHMUC (
     MaDanhMuc INT IDENTITY(1,1) PRIMARY KEY,
@@ -46,7 +46,7 @@ CREATE TABLE SANPHAM (
     DonGia DECIMAL(18,2) CHECK (DonGia >= 0) default 0 not null,
     MaDanhMuc INT NOT NULL,
     HinhAnhURL NVARCHAR(255), -- đường dẫn ảnh sản phẩm
-    FOREIGN KEY (MaDanhMuc) REFERENCES DANHMUC(MaDanhMuc)
+    FOREIGN KEY (MaDanhMuc) REFERENCES DANHMUC(MaDanhMuc) on delete cascade on update cascade
 );
 CREATE TABLE TANG (
     MaTang INT IDENTITY(1,1) PRIMARY KEY,
@@ -57,7 +57,7 @@ CREATE TABLE BAN (
     TenBan NVARCHAR(50) NOT NULL,
     MaTang INT NOT NULL,
     TrangThai NVARCHAR(50) CHECK (TrangThai IN (N'Trống', N'Có khách', N'Đang dọn')) DEFAULT N'Trống',
-    FOREIGN KEY (MaTang) REFERENCES TANG(MaTang)
+    FOREIGN KEY (MaTang) REFERENCES TANG(MaTang) on delete cascade on update cascade
 );
 CREATE TABLE ODER (
     MaOder INT IDENTITY(1,1) PRIMARY KEY,
@@ -68,8 +68,8 @@ CREATE TABLE ODER (
     ChietKhau float default 0 check (ChietKhau in (0, 0.1, 0.2, 0.5, 1)),
     TongTien DECIMAL(18,2) DEFAULT 0,
     TrangThai NVARCHAR(50) CHECK (TrangThai IN (N'Chưa thanh toán', N'Đã thanh toán', N'Đã huỷ')) DEFAULT N'Chưa thanh toán',
-    FOREIGN KEY (MaBan) REFERENCES BAN(MaBan),
-    FOREIGN KEY (MaNhanVien) REFERENCES NHANVIEN(MaNhanVien)
+    FOREIGN KEY (MaBan) REFERENCES BAN(MaBan) on delete cascade on update cascade,
+    FOREIGN KEY (MaNhanVien) REFERENCES NHANVIEN(MaNhanVien) on delete cascade on update cascade
 );
 CREATE TABLE CHITIETODER (
     MaCTOder INT IDENTITY(1,1) PRIMARY KEY,
@@ -77,21 +77,18 @@ CREATE TABLE CHITIETODER (
     MaSanPham INT NOT NULL,
     SoLuong INT CHECK (SoLuong > 0) NOT NULL,
     DonGia DECIMAL(18,2) NOT NULL,
-    FOREIGN KEY (MaOder) REFERENCES ODER(MaOder),
-    FOREIGN KEY (MaSanPham) REFERENCES SANPHAM(MaSanPham)
+    FOREIGN KEY (MaOder) REFERENCES ODER(MaOder) on delete cascade on update cascade,
+    FOREIGN KEY (MaSanPham) REFERENCES SANPHAM(MaSanPham) on delete cascade on update cascade
 );
 CREATE TABLE HUYMON (
     MaHuy INT IDENTITY(1,1) PRIMARY KEY,
     MaOder INT NOT NULL,
-    MaBan INT NOT NULL,
     MaSanPham INT NOT NULL,
     LyDo NVARCHAR(200),
     ThoiGianHuy DATETIME DEFAULT GETDATE(),
-    FOREIGN KEY (MaOder) REFERENCES ODER(MaOder),
-    FOREIGN KEY (MaBan) REFERENCES BAN(MaBan),
-    FOREIGN KEY (MaSanPham) REFERENCES SANPHAM(MaSanPham)
+    FOREIGN KEY (MaOder) REFERENCES ODER(MaOder) on delete cascade on update cascade,
+    FOREIGN KEY (MaSanPham) REFERENCES SANPHAM(MaSanPham) on delete cascade on update cascade
 );
-
 -- ==============================
 -- DỮ LIỆU MẪU
 -- ==============================
@@ -183,14 +180,19 @@ VALUES
 (N'nv4', N'123', N'Nhân viên'),
 (N'nv5', N'123', N'Nhân viên');
 
+INSERT INTO TAIKHOAN (TenDangNhap, MatKhau, LoaiTaiKhoan, TrangThai)
+VALUES
+(N'nv6', N'123', N'Nhân viên', 0);
+
 INSERT INTO NHANVIEN (TenNhanVien, GioiTinh, NgaySinh, SDT, DiaChi, MaTaiKhoan)
 VALUES
-(N'Nguyễn Văn Admin', N'Nam', '1990-01-01', N'0909000001', N'Hà Nội', 1),
+(N'Nguyễn Long Nhật', N'Nam', '2005-11-01', N'0909000002', N'Quảng Trị', 1),
 (N'Lê Văn A', N'Nam', '1995-05-01', N'0909000002', N'Hà Nội', 2),
 (N'Trần Thị B', N'Nữ', '1998-03-10', N'0909000003', N'Hải Phòng', 3),
 (N'Phạm Văn C', N'Nam', '1999-07-15', N'0909000004', N'Hà Nam', 4),
 (N'Hoàng Thị D', N'Nữ', '2000-11-25', N'0909000005', N'Ninh Bình', 5),
-(N'Nguyễn Văn E', N'Nam', '2001-09-20', N'0909000006', N'Nam Định', 6);
+(N'Nguyễn Văn E', N'Nam', '2001-09-20', N'0909000006', N'Nam Định', 6),
+(N'Nguyễn Văn F', N'Nam', '2001-09-20', N'0909000006', N'Nam Định', 7);
 
 -- Oder mẫu: 10 dòng, trạng thái khác nhau
 INSERT INTO ODER (MaBan, MaNhanVien, ThoiGianBatDau, ThoiGianThanhToan, TongTien, TrangThai)
@@ -199,12 +201,12 @@ VALUES
 (2, 3, GETDATE(), DATEADD(MINUTE, 25, GETDATE()), 95000, N'Đã thanh toán'),
 (3, 4, GETDATE(), NULL, 0, N'Chưa thanh toán'),
 (4, 5, GETDATE(), DATEADD(MINUTE, 15, GETDATE()), 80000, N'Đã thanh toán'),
-(5, 6, GETDATE(), NULL, 0, N'Chưa thanh toán'),
+(5, 1, GETDATE(), NULL, 0, N'Chưa thanh toán'),
 (6, 2, GETDATE(), DATEADD(MINUTE, 20, GETDATE()), 65000, N'Đã thanh toán'),
 (7, 3, GETDATE(), NULL, 0, N'Đã huỷ'),
 (8, 4, GETDATE(), NULL, 0, N'Đã huỷ'),
 (9, 5, GETDATE(), DATEADD(MINUTE, 40, GETDATE()), 105000, N'Đã thanh toán'),
-(10, 6, GETDATE(), NULL, 0, N'Chưa thanh toán'),
+(10, 1, GETDATE(), NULL, 0, N'Chưa thanh toán'),
 (1, 2, GETDATE(), null, 110000, N'Chưa thanh toán');
 
 -- Chi tiết order mẫu
@@ -223,10 +225,10 @@ VALUES
 (11, 15, 2, 55000)
 
 -- Huỷ món: khớp các order có trạng thái 'Đã huỷ'
-INSERT INTO HUYMON (MaOder, MaBan, MaSanPham, LyDo)
+INSERT INTO HUYMON (MaOder, MaSanPham, LyDo)
 VALUES
-(7, 7, 5, N'Khách đổi món'),
-(8, 8, 9, N'Món pha nhầm');
+(7, 5, N'Khách đổi món'),
+(8, 9, N'Món pha nhầm');
 
 
 update ban
@@ -237,6 +239,7 @@ select *from ODER
 select *from CHITIETODER
 select *from SANPHAM
 select *from BAN
+select *from DANHMUC
 select *from TAIKHOAN
 select *from NHANVIEN
 select *from HUYMON

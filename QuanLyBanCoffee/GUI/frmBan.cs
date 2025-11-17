@@ -77,5 +77,20 @@ namespace QuanLyBanCoffee.GUI
             // Thêm vào panel
             pn_MainContent.Controls.Add(ucDSDH);
         }
+
+        private void mnuDoanhThu_Click(object sender, EventArgs e)
+        {
+            // Xóa hết các control hiện có trong panel
+            pn_MainContent.Controls.Clear();
+
+            // Khởi tạo UserControl mới
+            UC_DoanhThu ucDoanhThu = new UC_DoanhThu
+            {
+                Dock = DockStyle.Fill  // cho UC fill toàn bộ panel
+            };
+
+            // Thêm vào panel
+            pn_MainContent.Controls.Add(ucDoanhThu);
+        }
     }
 }
