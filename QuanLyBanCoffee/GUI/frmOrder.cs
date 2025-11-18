@@ -90,56 +90,61 @@ namespace QuanLyBanCoffee.GUI
                 dgvDSMon.AutoGenerateColumns = false;
                 dgvDSMon.Columns.Clear();
 
-                // Cột ẩn: Mã Order
                 var colMaOrder = new DataGridViewTextBoxColumn()
                 {
                     Name = "MaOder",
                     HeaderText = "Mã Order",
                     DataPropertyName = "MaOder",
-                    //Visible = false
+                    Visible = false
                 };
                 dgvDSMon.Columns.Add(colMaOrder);
 
-                // Cột ẩn: Mã sản phẩm
                 var colMaSP = new DataGridViewTextBoxColumn()
                 {
                     Name = "MaSanPham",
                     HeaderText = "Mã SP",
                     DataPropertyName = "MaSanPham",
-                    //Visible = false
+                    Visible = false
                 };
                 dgvDSMon.Columns.Add(colMaSP);
 
-                // Cột hiển thị: Tên món
                 dgvDSMon.Columns.Add(new DataGridViewTextBoxColumn()
                 {
                     Name = "TenMon",
                     HeaderText = "Tên món",
                     DataPropertyName = "TenMon",
-                    Width = 150
                 });
 
-                // Cột hiển thị: Số lượng
                 dgvDSMon.Columns.Add(new DataGridViewTextBoxColumn()
                 {
                     Name = "SoLuong",
                     HeaderText = "Số lượng",
                     DataPropertyName = "SoLuong",
-                    Width = 70,
                     DefaultCellStyle = { Alignment = DataGridViewContentAlignment.MiddleCenter }
                 });
 
-                // Cột hiển thị: Thành tiền
                 var colThanhTien = new DataGridViewTextBoxColumn()
                 {
                     Name = "ThanhTien",
                     HeaderText = "Thành tiền",
                     DataPropertyName = "ThanhTien",
-                    Width = 100
                 };
+
                 colThanhTien.DefaultCellStyle.Format = "N0";
                 colThanhTien.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
                 dgvDSMon.Columns.Add(colThanhTien);
+                dgvDSMon.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                dgvDSMon.ReadOnly = true;
+                dgvDSMon.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dgvDSMon.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                dgvDSMon.MultiSelect = false;
+
+                dgvDSMon.EnableHeadersVisualStyles = false;
+                dgvDSMon.ColumnHeadersDefaultCellStyle.BackColor = Color.Yellow;
+                dgvDSMon.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
+                dgvDSMon.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+                dgvDSMon.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                dgvDSMon.ColumnHeadersHeight = 40;
             }
         }
 
@@ -271,7 +276,6 @@ namespace QuanLyBanCoffee.GUI
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-
             if (dgvDSMon.Rows.Count == 0)
             {
                 MessageBox.Show("Chưa có món nào được chọn để lưu.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

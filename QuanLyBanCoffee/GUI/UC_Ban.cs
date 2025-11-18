@@ -9,7 +9,6 @@ namespace QuanLyBanCoffee.GUI
 {
     public partial class UC_Ban : UserControl
     {
-        // Khởi tạo đối tượng FileXml
         private FileXml fileXml = new FileXml();
         private Ban ban = new Ban();
         private Order order = new Order();
@@ -29,12 +28,13 @@ namespace QuanLyBanCoffee.GUI
             {
                 cmbChietKhau.SelectedIndex = 0; // Chọn 0% mặc định
             }
+
             CalculateTotal();
-            //thiết lập cấu trúc hiển thị cho DataGridView danh sách order
             SetupDisplayDataGridView();
-            // Tải danh sách các tầng và điền vào ComboBox `cmbTang`.
             LoadTangToComboBox();
+
             this.tenTangDuocChon = tenTang;
+
             if (cmbTang.Items.Count > 0)
             {
                 // Tự động chọn tầng mà người dùng đã tương tác trước đó (được truyền qua biến `tenTangDuocChon`).
@@ -56,12 +56,12 @@ namespace QuanLyBanCoffee.GUI
                     // Nếu không có tầng nào được chỉ định hoặc không tìm thấy, chọn tầng đầu tiên làm mặc định.
                     cmbTang.SelectedIndex = 0;
                 }
+
                 this.tenBanDuocChon = tenBan;
+
                 // Sau khi các bàn đã được tải lên, tự động "click" vào bàn được chỉ định (`tenBanDuocChon`).
                 if (!string.IsNullOrEmpty(this.tenBanDuocChon))
                 {
-                    // Sử dụng `this.BeginInvoke` để đưa hành động chọn bàn vào hàng đợi xử lý của luồng giao diện (UI thread).
-                    // Hành động này sẽ chỉ được thực thi SAU KHI tất cả các tác vụ hiện tại (bao gồm cả
                     this.BeginInvoke(new Action(() =>
                     {
                         ActivateTableButton(this.tenBanDuocChon);
@@ -88,11 +88,7 @@ namespace QuanLyBanCoffee.GUI
         public UC_Ban()
         {
             InitializeComponent();
-
-            // Gán sự kiện cmbTang_SelectedIndexChanged trong constructor
             this.cmbTang.SelectedIndexChanged += new System.EventHandler(this.cmbTang_SelectedIndexChanged);
-
-            // Gán sự kiện SelectedIndexChanged cho cmbChietKhau
             this.cmbChietKhau.SelectedIndexChanged += new System.EventHandler(this.cmbChietKhau_SelectedIndexChanged);
         }
 
@@ -117,7 +113,6 @@ namespace QuanLyBanCoffee.GUI
             }
         }
 
-        // Hàm thiết lập cấu trúc cho DataGridView hiển thị danh sách order
         private void SetupDisplayDataGridView()
         {
             if (dgvDSorder.Columns.Count == 0)
@@ -125,7 +120,6 @@ namespace QuanLyBanCoffee.GUI
                 dgvDSorder.AutoGenerateColumns = false;
                 dgvDSorder.Columns.Clear();
 
-                // Cột ẩn: Mã Order
                 var colMaOrder = new DataGridViewTextBoxColumn()
                 {
                     Name = "MaOder",
@@ -135,7 +129,6 @@ namespace QuanLyBanCoffee.GUI
                 };
                 dgvDSorder.Columns.Add(colMaOrder);
 
-                // Cột ẩn: Mã sản phẩm
                 var colMaSP = new DataGridViewTextBoxColumn()
                 {
                     Name = "MaSanPham",
@@ -145,50 +138,51 @@ namespace QuanLyBanCoffee.GUI
                 };
                 dgvDSorder.Columns.Add(colMaSP);
 
-                // Cột hiển thị: Tên món
                 dgvDSorder.Columns.Add(new DataGridViewTextBoxColumn()
                 {
                     Name = "TenMon",
                     HeaderText = "Tên món",
                     DataPropertyName = "TenMon",
-                    Width = 150
                 });
 
-                // Cột hiển thị: Số lượng
                 dgvDSorder.Columns.Add(new DataGridViewTextBoxColumn()
                 {
                     Name = "SoLuong",
                     HeaderText = "Số lượng",
                     DataPropertyName = "SoLuong",
-                    Width = 70,
                     DefaultCellStyle = { Alignment = DataGridViewContentAlignment.MiddleCenter }
                 });
 
-                // Cột hiển thị: Thành tiền
                 var colThanhTien = new DataGridViewTextBoxColumn()
                 {
                     Name = "ThanhTien",
                     HeaderText = "Thành tiền",
                     DataPropertyName = "ThanhTien",
-                    Width = 100
                 };
                 colThanhTien.DefaultCellStyle.Format = "N0";
                 colThanhTien.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
                 dgvDSorder.Columns.Add(colThanhTien);
+                dgvDSorder.AllowUserToAddRows = false;  
+                dgvDSorder.ReadOnly = true;            
                 dgvDSorder.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dgvDSorder.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 dgvDSorder.MultiSelect = false;
+
+                dgvDSorder.EnableHeadersVisualStyles = false;
+                dgvDSorder.ColumnHeadersDefaultCellStyle.BackColor = Color.Yellow;
+                dgvDSorder.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
+                dgvDSorder.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+                dgvDSorder.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                dgvDSorder.ColumnHeadersHeight = 40;
             }
         }
 
-
-        // Hàm tải danh sách tầng vào ComboBox
         private void LoadTangToComboBox()
         {
             try
             {
                 DataTable dtTang = fileXml.HienThi("TANG.xml");
-                // Kiểm tra xem DataTable có cột MaTang và TenTang không
+
                 if (dtTang.Columns.Contains("MaTang") && dtTang.Columns.Contains("TenTang"))
                 {
                     cmbTang.DataSource = dtTang;
@@ -197,7 +191,6 @@ namespace QuanLyBanCoffee.GUI
                 }
                 else
                 {
-                    // Xử lý nếu file XML không đúng cấu trúc
                     MessageBox.Show("File TANG.xml không đúng cấu trúc (thiếu cột MaTang hoặc TenTang).", "Lỗi Cấu Trúc", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -207,7 +200,6 @@ namespace QuanLyBanCoffee.GUI
             }
         }
 
-        // Hàm tải danh sách bàn vào panel dựa trên tên tầng
         private void LoadBanVaoPanel(string tenTang)
         {
             flpDSBan.Controls.Clear();
@@ -221,7 +213,6 @@ namespace QuanLyBanCoffee.GUI
                 var banTrenTang = dtBan.AsEnumerable()
                                        .Where(r =>
                                        {
-                                           // Lấy MaTang của bàn và chuyển đổi an toàn
                                            int banMaTang;
                                            return int.TryParse(r["MaTang"]?.ToString(), out banMaTang) && banMaTang == maTang;
                                        });
@@ -258,28 +249,25 @@ namespace QuanLyBanCoffee.GUI
                 btn.BackColor = Color.Blue;
                 btn.ForeColor = Color.White;
             }
-            else // "Trống" hoặc các trạng thái khác
+            else 
             {
                 btn.BackColor = Color.White;
                 btn.ForeColor = Color.Black;
             }
         }
 
-        //sự kiện khi thay đổi tầng ở combobox
         private void cmbTang_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbTang.SelectedItem != null)
             {
-                //Lấy tên tầng đúng từ ComboBox đang được chọn
                 string tenTang = cmbTang.GetItemText(cmbTang.SelectedItem);
                 LoadBanVaoPanel(tenTang);
 
-                // Cập nhật lại các biến lưu trữ bàn và tầng được chọn
                 this.tenBanDuocChon = string.Empty;
                 this.tenTangDuocChon = tenTang;
                 lbBanDangChon.Text = "Chưa chọn bàn";
                 lbTongTien.Text = "Chưa chọn bàn";
-                dgvDSorder.DataSource = null; // Xóa dữ liệu cũ
+                dgvDSorder.DataSource = null; 
             }
         }
 
@@ -298,10 +286,6 @@ namespace QuanLyBanCoffee.GUI
 
             try
             {
-                // Đảm bảo DataGridView đã có cột
-                //SetupDisplayDataGridView();
-
-                // Lấy danh sách món chưa thanh toán của bàn
                 DataTable dtMon = order.LoadDanhSachMonChuaThanhToanTheoBan(maBanDuocChon);
                 if (dtMon == null || dtMon.Rows.Count == 0)
                 {
@@ -310,10 +294,8 @@ namespace QuanLyBanCoffee.GUI
                     return;
                 }
 
-                // Lấy danh sách sản phẩm để join tên món
                 DataTable dtSanPham = fileXml.HienThi("SANPHAM.xml");
 
-                // Chuẩn bị DataTable theo cấu trúc DataGridView
                 DataTable dtHienThi = new DataTable();
                 dtHienThi.Columns.Add("MaOder", typeof(int));
                 dtHienThi.Columns.Add("MaSanPham", typeof(int));
@@ -321,7 +303,6 @@ namespace QuanLyBanCoffee.GUI
                 dtHienThi.Columns.Add("SoLuong", typeof(int));
                 dtHienThi.Columns.Add("ThanhTien", typeof(decimal));
 
-                // Ghép dữ liệu từ Order + Sản phẩm
                 foreach (DataRow r in dtMon.Rows)
                 {
                     int maSP = Convert.ToInt32(r["MaSanPham"]);
@@ -337,11 +318,11 @@ namespace QuanLyBanCoffee.GUI
                     dtHienThi.Rows.Add(r["MaOder"], maSP, tenMon, soLuong, thanhTien);
                 }
                 this.maOrder = Convert.ToInt32(dtMon.Rows[0]["MaOder"]);
-                // Gán dữ liệu lên DataGridView
+          
                 dgvDSorder.DataSource = dtHienThi;
 
                 CalculateTotal();
-                // Ẩn các cột mã
+        
                 if (dgvDSorder.Columns["MaOder"] != null)
                     dgvDSorder.Columns["MaOder"].Visible = false;
                 if (dgvDSorder.Columns["MaSanPham"] != null)
@@ -363,7 +344,6 @@ namespace QuanLyBanCoffee.GUI
 
             try
             {
-                // Khởi tạo form mới và truyền dữ liệu cần thiết
                 frmOrder formOrder = new frmOrder(this.maBanDuocChon, this.maNV, this.tenBanDuocChon, this.tenTangDuocChon);
 
                 formOrder.Show();
@@ -376,11 +356,9 @@ namespace QuanLyBanCoffee.GUI
 
         private void CalculateTotal()
         {
-            // 2. Tính Tổng tiền trước chiết khấu
             decimal tongTienTruocCK = dgvDSorder.Rows.Cast<DataGridViewRow>()
                                             .Sum(row => Convert.ToDecimal(row.Cells["ThanhTien"].Value));
 
-            // 3. Xử lý Chiết khấu
             float chietKhauPhanTram = 0.0f;
             if (cmbChietKhau.SelectedItem != null)
             {
@@ -393,7 +371,6 @@ namespace QuanLyBanCoffee.GUI
             this.tyLeChietKhau = chietKhauPhanTram / 100.0f;
             decimal tienChietKhau = tongTienTruocCK * (decimal)this.tyLeChietKhau;
 
-            // 4. Lưu kết quả cuối cùng vào biến cục bộ
             this.tongTienThanhToanCuoiCung = tongTienTruocCK - tienChietKhau;
             lbTongTien.Text = $"Tổng tiền thanh toán: {this.tongTienThanhToanCuoiCung.ToString("N0")} VND";
         }
@@ -409,7 +386,7 @@ namespace QuanLyBanCoffee.GUI
             order.CapNhatThanhToan(maOrder, "Đã thanh toán", tyLeChietKhau);
             ban.CapNhatTrangThaiBan(maBanDuocChon, "Trống");
             MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            // Cập nhật lại giao diện
+        
             ReloadpForm(this.tenBanDuocChon, this.maNV, this.tenTangDuocChon);
         }
 

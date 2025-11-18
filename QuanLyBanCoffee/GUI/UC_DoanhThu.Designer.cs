@@ -41,10 +41,11 @@
             // 
             // dtpNgayXem
             // 
-            this.dtpNgayXem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayXem.Location = new System.Drawing.Point(536, 106);
+            this.dtpNgayXem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayXem.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayXem.Location = new System.Drawing.Point(563, 102);
             this.dtpNgayXem.Name = "dtpNgayXem";
-            this.dtpNgayXem.Size = new System.Drawing.Size(200, 27);
+            this.dtpNgayXem.Size = new System.Drawing.Size(148, 30);
             this.dtpNgayXem.TabIndex = 0;
             // 
             // btnXemBaoCao
@@ -54,7 +55,7 @@
             this.btnXemBaoCao.ForeColor = System.Drawing.Color.White;
             this.btnXemBaoCao.Location = new System.Drawing.Point(536, 543);
             this.btnXemBaoCao.Name = "btnXemBaoCao";
-            this.btnXemBaoCao.Size = new System.Drawing.Size(179, 57);
+            this.btnXemBaoCao.Size = new System.Drawing.Size(200, 57);
             this.btnXemBaoCao.TabIndex = 1;
             this.btnXemBaoCao.Text = "Xem doanh thu";
             this.btnXemBaoCao.UseVisualStyleBackColor = false;

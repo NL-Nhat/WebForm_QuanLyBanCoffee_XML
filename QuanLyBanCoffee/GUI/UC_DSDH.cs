@@ -39,7 +39,6 @@ namespace QuanLyBanCoffee.GUI
                 dgvDSDH.AutoGenerateColumns = false;
                 dgvDSDH.Columns.Clear();
 
-                // Cột ẩn: MaOder
                 var colMaOrder = new DataGridViewTextBoxColumn()
                 {
                     Name = "MaOrder",
@@ -49,7 +48,6 @@ namespace QuanLyBanCoffee.GUI
                 };
                 dgvDSDH.Columns.Add(colMaOrder);
 
-                // Cột hiển thị: Tên Bàn
                 dgvDSDH.Columns.Add(new DataGridViewTextBoxColumn()
                 {
                     Name = "TenBan",
@@ -57,7 +55,6 @@ namespace QuanLyBanCoffee.GUI
                     DataPropertyName = "TenBan",
                 });
 
-                // Cột hiển thị: Tên Tầng
                 dgvDSDH.Columns.Add(new DataGridViewTextBoxColumn()
                 {
                     Name = "TenTang",
@@ -65,7 +62,6 @@ namespace QuanLyBanCoffee.GUI
                     DataPropertyName = "TenTang",
                 });
 
-                // Cột hiển thị: Tổng Tiền
                 var colTongTien = new DataGridViewTextBoxColumn()
                 {
                     Name = "TongTien",
@@ -76,7 +72,6 @@ namespace QuanLyBanCoffee.GUI
                 colTongTien.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
                 dgvDSDH.Columns.Add(colTongTien);
 
-                // Cột hiển thị: Số Lượng
                 dgvDSDH.Columns.Add(new DataGridViewTextBoxColumn()
                 {
                     Name = "SoLuong",
@@ -85,7 +80,6 @@ namespace QuanLyBanCoffee.GUI
                     DefaultCellStyle = { Alignment = DataGridViewContentAlignment.MiddleCenter }
                 });
 
-                // Cột hiển thị: Thời Gian Thanh Toán (chiều rộng cố định)
                 var colThoiGian = new DataGridViewTextBoxColumn()
                 {
                     Name = "ThoiGianThanhToan",
@@ -94,34 +88,33 @@ namespace QuanLyBanCoffee.GUI
                     Width = 180,
                     DefaultCellStyle = { Format = "dd/MM/yyyy HH:mm" }
                 };
-                colThoiGian.AutoSizeMode = DataGridViewAutoSizeColumnMode.None; // giữ cố định
+                colThoiGian.AutoSizeMode = DataGridViewAutoSizeColumnMode.None; 
                 dgvDSDH.Columns.Add(colThoiGian);
 
-                // Cột hiển thị: Chiết Khấu
                 var colChietKhau = new DataGridViewTextBoxColumn()
                 {
                     Name = "ChietKhau",
                     HeaderText = "Chiết Khấu",
                     DataPropertyName = "ChietKhau",
                 };
-                colChietKhau.DefaultCellStyle.Format = "P0"; // Hiển thị %: 0%, 10%, 20%...
+                colChietKhau.DefaultCellStyle.Format = "P0"; 
                 colChietKhau.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 dgvDSDH.Columns.Add(colChietKhau);
 
-                // --- Tùy chỉnh DataGridView ---
                 dgvDSDH.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 dgvDSDH.MultiSelect = false;
                 dgvDSDH.EnableHeadersVisualStyles = false;
+                dgvDSDH.AllowUserToAddRows = false;
+                dgvDSDH.ReadOnly = true;
+                dgvDSDH.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
-                // --- CHỈNH HEADER ---
-                dgvDSDH.EnableHeadersVisualStyles = false; // cho phép tùy chỉnh màu header
-                dgvDSDH.ColumnHeadersDefaultCellStyle.BackColor = Color.Yellow; // màu nền header
-                dgvDSDH.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black; // màu chữ header
-                dgvDSDH.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold); // font header
-                dgvDSDH.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; // căn giữa
-                dgvDSDH.ColumnHeadersHeight = 40; // chiều cao header
+                dgvDSDH.EnableHeadersVisualStyles = false; 
+                dgvDSDH.ColumnHeadersDefaultCellStyle.BackColor = Color.Yellow; 
+                dgvDSDH.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
+                dgvDSDH.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold); 
+                dgvDSDH.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; 
+                dgvDSDH.ColumnHeadersHeight = 40; 
 
-                // --- AutoSizeMode: cột Thời Gian cố định, các cột còn lại Fill ---
                 foreach (DataGridViewColumn col in dgvDSDH.Columns)
                 {
                     if (col.Name != "ThoiGianThanhToan" && col.Visible)

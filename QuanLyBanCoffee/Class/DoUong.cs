@@ -27,7 +27,7 @@ namespace QuanLyBanCoffee.Class
                             {
                                 MaSanPham = Convert.ToInt32(sp["MaSanPham"]),
                                 TenSanPham = sp["TenSanPham"].ToString(),
-                                DonGia = Convert.ToDecimal(sp["DonGia"]), 
+                                DonGia = Convert.ToDecimal(sp["DonGia"]),
                                 TenDanhMuc = dm["TenDanhMuc"].ToString(),
                                 HinhAnhURL = sp["HinhAnhURL"].ToString()
                             };
@@ -92,13 +92,65 @@ namespace QuanLyBanCoffee.Class
                     fileXml.Luu(duongDan, dtSanPham);
                     MessageBox.Show("Cập nhật đồ uống thành công.", "Thông báo", System.Windows.Forms.MessageBoxButtons.OK);
                 }
-                else {
+                else
+                {
                     MessageBox.Show($"Không tìm thấy sản phẩm với Mã {maSanPham} để cập nhật.", "Lỗi", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Lỗi khi cập nhật đồ uống: {ex.Message}", "Lỗi", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+            }
+        }
+
+        public void ThemDoUong(string tenSanPham, decimal donGia, int maDanhMuc, string hinhAnhURL)
+        {
+            try
+            {
+                string duongDan = "SANPHAM.xml";
+                DataTable dtSanPham = fileXml.HienThi(duongDan);
+                int newMaSanPham = dtSanPham.AsEnumerable()
+                    .Select(row => Convert.ToInt32(row["MaSanPham"]))
+                    .DefaultIfEmpty(0)
+                    .Max() + 1;
+                DataRow newRow = dtSanPham.NewRow();
+                newRow["MaSanPham"] = newMaSanPham;
+                newRow["TenSanPham"] = tenSanPham;
+                newRow["DonGia"] = donGia;
+                newRow["MaDanhMuc"] = maDanhMuc;
+                newRow["HinhAnhURL"] = hinhAnhURL;
+                dtSanPham.Rows.Add(newRow);
+                fileXml.Luu(duongDan, dtSanPham);
+                MessageBox.Show("Thêm đồ uống thành công.", "Thông báo", System.Windows.Forms.MessageBoxButtons.OK);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi thêm đồ uống: {ex.Message}", "Lỗi", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+            }
+        }
+
+        public void XoaDoUong(int maSanPham)
+        {
+            try
+            {
+                string duongDan = "SANPHAM.xml";
+                DataTable dtSanPham = fileXml.HienThi(duongDan);
+                DataRow rowToDelete = dtSanPham.AsEnumerable()
+                    .FirstOrDefault(row => Convert.ToInt32(row["MaSanPham"]) == maSanPham);
+                if (rowToDelete != null)
+                {
+                    dtSanPham.Rows.Remove(rowToDelete);
+                    fileXml.Luu(duongDan, dtSanPham);
+                    MessageBox.Show("Xóa đồ uống thành công.", "Thông báo", System.Windows.Forms.MessageBoxButtons.OK);
+                }
+                else
+                {
+                    MessageBox.Show($"Không tìm thấy sản phẩm với Mã {maSanPham} để xóa.", "Lỗi", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi xóa đồ uống: {ex.Message}", "Lỗi", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
     }

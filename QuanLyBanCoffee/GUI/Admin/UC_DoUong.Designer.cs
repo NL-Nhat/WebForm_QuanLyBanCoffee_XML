@@ -52,12 +52,12 @@
             this.dgvDoUong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDoUong.BackgroundColor = System.Drawing.Color.White;
             this.dgvDoUong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDoUong.Location = new System.Drawing.Point(37, 92);
+            this.dgvDoUong.Location = new System.Drawing.Point(21, 92);
             this.dgvDoUong.Name = "dgvDoUong";
             this.dgvDoUong.ReadOnly = true;
             this.dgvDoUong.RowHeadersWidth = 51;
             this.dgvDoUong.RowTemplate.Height = 24;
-            this.dgvDoUong.Size = new System.Drawing.Size(761, 424);
+            this.dgvDoUong.Size = new System.Drawing.Size(761, 502);
             this.dgvDoUong.TabIndex = 0;
             this.dgvDoUong.SelectionChanged += new System.EventHandler(this.dgvDoUong_SelectionChanged);
             // 
@@ -66,18 +66,19 @@
             this.btnThem.BackColor = System.Drawing.Color.Blue;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(346, 544);
+            this.btnThem.Location = new System.Drawing.Point(805, 547);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(118, 47);
             this.btnThem.TabIndex = 1;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnSua
             // 
             this.btnSua.BackColor = System.Drawing.Color.Yellow;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(568, 544);
+            this.btnSua.Location = new System.Drawing.Point(957, 547);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(118, 47);
             this.btnSua.TabIndex = 2;
@@ -90,12 +91,13 @@
             this.btnXoa.BackColor = System.Drawing.Color.Red;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(768, 544);
+            this.btnXoa.Location = new System.Drawing.Point(1114, 547);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(118, 47);
             this.btnXoa.TabIndex = 3;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // label1
             // 
@@ -112,7 +114,7 @@
             this.cmbDanhMuc.BackColor = System.Drawing.Color.White;
             this.cmbDanhMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbDanhMuc.FormattingEnabled = true;
-            this.cmbDanhMuc.Location = new System.Drawing.Point(979, 345);
+            this.cmbDanhMuc.Location = new System.Drawing.Point(957, 363);
             this.cmbDanhMuc.Name = "cmbDanhMuc";
             this.cmbDanhMuc.Size = new System.Drawing.Size(181, 28);
             this.cmbDanhMuc.TabIndex = 5;
@@ -122,7 +124,7 @@
             // 
             this.txtTenSanPham.BackColor = System.Drawing.Color.White;
             this.txtTenSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenSanPham.Location = new System.Drawing.Point(979, 209);
+            this.txtTenSanPham.Location = new System.Drawing.Point(957, 227);
             this.txtTenSanPham.Name = "txtTenSanPham";
             this.txtTenSanPham.Size = new System.Drawing.Size(240, 27);
             this.txtTenSanPham.TabIndex = 6;
@@ -131,7 +133,7 @@
             // 
             this.txtGia.BackColor = System.Drawing.Color.White;
             this.txtGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGia.Location = new System.Drawing.Point(979, 277);
+            this.txtGia.Location = new System.Drawing.Point(957, 295);
             this.txtGia.Name = "txtGia";
             this.txtGia.Size = new System.Drawing.Size(240, 27);
             this.txtGia.TabIndex = 7;
@@ -140,7 +142,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(825, 216);
+            this.label2.Location = new System.Drawing.Point(803, 234);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 20);
             this.label2.TabIndex = 8;
@@ -150,7 +152,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(825, 284);
+            this.label3.Location = new System.Drawing.Point(803, 302);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 20);
             this.label3.TabIndex = 9;
@@ -160,7 +162,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(825, 353);
+            this.label4.Location = new System.Drawing.Point(803, 371);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 20);
             this.label4.TabIndex = 10;
@@ -170,7 +172,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(825, 427);
+            this.label5.Location = new System.Drawing.Point(803, 445);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(90, 20);
             this.label5.TabIndex = 11;
@@ -178,7 +180,7 @@
             // 
             // picHinhAnhSanPham
             // 
-            this.picHinhAnhSanPham.Location = new System.Drawing.Point(979, 397);
+            this.picHinhAnhSanPham.Location = new System.Drawing.Point(957, 415);
             this.picHinhAnhSanPham.Name = "picHinhAnhSanPham";
             this.picHinhAnhSanPham.Size = new System.Drawing.Size(100, 50);
             this.picHinhAnhSanPham.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -190,7 +192,7 @@
             this.btnChonAnh.BackColor = System.Drawing.Color.White;
             this.btnChonAnh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChonAnh.ForeColor = System.Drawing.Color.Black;
-            this.btnChonAnh.Location = new System.Drawing.Point(1106, 413);
+            this.btnChonAnh.Location = new System.Drawing.Point(1084, 431);
             this.btnChonAnh.Name = "btnChonAnh";
             this.btnChonAnh.Size = new System.Drawing.Size(102, 34);
             this.btnChonAnh.TabIndex = 13;

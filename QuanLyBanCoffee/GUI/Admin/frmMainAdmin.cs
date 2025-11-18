@@ -54,5 +54,22 @@ namespace QuanLyBanCoffee.GUI.Admin
                 pn_MainContent.Controls.Add(uc_douong);
             }
         }
+
+        private void mnuNhanVien_Click(object sender, EventArgs e)
+        {
+            if (pn_MainContent.Controls.Count > 0 && pn_MainContent.Controls[0] is UC_NhanVien)
+            {
+                return;
+            }
+
+            pn_MainContent.Controls.Clear();
+
+            UC_NhanVien uc_nhanvien = new UC_NhanVien()
+            {
+                Dock = DockStyle.Fill
+            };
+
+            pn_MainContent.Controls.Add(uc_nhanvien);
+        }
     }
 }

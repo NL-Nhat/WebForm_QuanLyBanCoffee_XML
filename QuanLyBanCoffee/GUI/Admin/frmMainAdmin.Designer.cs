@@ -77,6 +77,7 @@
             this.mnuNhanVien.Name = "mnuNhanVien";
             this.mnuNhanVien.Size = new System.Drawing.Size(137, 35);
             this.mnuNhanVien.Text = "Nhân viên";
+            this.mnuNhanVien.Click += new System.EventHandler(this.mnuNhanVien_Click);
             // 
             // mnuBaoCao
             // 

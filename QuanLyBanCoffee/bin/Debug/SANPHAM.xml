@@ -21,10 +21,10 @@
   </xs:schema>
   <_x0027_SANPHAM_x0027_>
     <MaSanPham>1</MaSanPham>
-    <TenSanPham>Cà phê</TenSanPham>
-    <DonGia>500000.00</DonGia>
-    <MaDanhMuc>3</MaDanhMuc>
-    <HinhAnhURL>mat.png</HinhAnhURL>
+    <TenSanPham>Cà phê đen đá</TenSanPham>
+    <DonGia>25000.00</DonGia>
+    <MaDanhMuc>1</MaDanhMuc>
+    <HinhAnhURL>denda.jpg</HinhAnhURL>
   </_x0027_SANPHAM_x0027_>
   <_x0027_SANPHAM_x0027_>
     <MaSanPham>2</MaSanPham>
@@ -57,9 +57,9 @@
   <_x0027_SANPHAM_x0027_>
     <MaSanPham>6</MaSanPham>
     <TenSanPham>Espresso</TenSanPham>
-    <DonGia>3000.00</DonGia>
+    <DonGia>30000.00</DonGia>
     <MaDanhMuc>1</MaDanhMuc>
-    <HinhAnhURL>nen4k.jpg</HinhAnhURL>
+    <HinhAnhURL>espres.jpg</HinhAnhURL>
   </_x0027_SANPHAM_x0027_>
   <_x0027_SANPHAM_x0027_>
     <MaSanPham>7</MaSanPham>

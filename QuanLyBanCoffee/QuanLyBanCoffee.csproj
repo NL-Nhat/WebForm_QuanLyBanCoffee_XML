@@ -67,6 +67,12 @@
     <Compile Include="GUI\Admin\UC_DoUong.Designer.cs">
       <DependentUpon>UC_DoUong.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Admin\UC_NhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Admin\UC_NhanVien.Designer.cs">
+      <DependentUpon>UC_NhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmBan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Admin\UC_DoUong.resx">
       <DependentUpon>UC_DoUong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Admin\UC_NhanVien.resx">
+      <DependentUpon>UC_NhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmBan.resx">
       <DependentUpon>frmBan.cs</DependentUpon>

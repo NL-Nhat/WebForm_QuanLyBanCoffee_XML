@@ -14,8 +14,8 @@ namespace QuanLyBanCoffee.GUI.Admin
 
         private int maDanhMuc;
         private string duongDanFileAnhMoiDuocChon = "";
-        //Theo dõi trạng thái ( đang xem hay đang sửa )
-        private bool isEditing = false;
+        // Biến lưu trạng thái hiện tại: "XEM", "THEM", "SUA"
+        private string cheDoHienTai = "XEM";
 
         public UC_DoUong()
         {
@@ -28,16 +28,16 @@ namespace QuanLyBanCoffee.GUI.Admin
             SetupDataGridView(dgvDoUong);
             LoadDuLieuVaoDataGridView(dgvDoUong);
 
-            //Ban đầu ở chế độ chỉ xem
-            ToggleEditMode(false);
+            ThietLapCheDo("XEM");
         }
 
         private void dgvDoUong_SelectionChanged(object sender, EventArgs e)
         {
-            // Đảm bảo rằng có hàng đang được chọn và đó không phải là hàng trống
+            // Nếu đang ở chế độ THÊM thì không cho load dữ liệu từ bảng lên
+            if (cheDoHienTai == "THEM") return;
+
             if (dgvDoUong.SelectedRows.Count > 0)
             {
-                // Lấy hàng hiện tại đang được chọn
                 DataGridViewRow selectedRow = dgvDoUong.SelectedRows[0];
                 HienThiChiTietTuRow(selectedRow);
             }
@@ -138,6 +138,7 @@ namespace QuanLyBanCoffee.GUI.Admin
 
             dgv.AllowUserToAddRows = false;
             dgv.ReadOnly = true;
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
@@ -268,93 +269,192 @@ namespace QuanLyBanCoffee.GUI.Admin
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            if (isEditing)
-            {
-                LuuThayDoi();
-                LoadDuLieuVaoDataGridView(dgvDoUong);
-            }
-            else
-            {
-                if (dgvDoUong.SelectedRows.Count > 0)
-                {
-                    ToggleEditMode(true);
-                }
-                else
-                {
-                    MessageBox.Show("Vui lòng chọn sản phẩm để sửa.");
-                }
-            }
-        }
-
-        private void LuuThayDoi()
-        {
-            try
+            if (cheDoHienTai == "XEM")
             {
                 if (dgvDoUong.SelectedRows.Count == 0)
                 {
-                    MessageBox.Show("Không có sản phẩm nào được chọn.", "Lỗi");
+                    MessageBox.Show("Vui lòng chọn món cần sửa!");
                     return;
                 }
 
-                int maSanPham = Convert.ToInt32(dgvDoUong.SelectedRows[0].Cells["MaSanPham"].Value);
-                string tenMoi = txtTenSanPham.Text;
-
-                if (!decimal.TryParse(txtGia.Text, out decimal giaMoi))
-                {
-                    MessageBox.Show("Giá không hợp lệ.", "Lỗi");
-                    return;
-                }
-
-                int maDanhMucMoi = Convert.ToInt32(cmbDanhMuc.SelectedValue);
-
-                string tenFileAnhDeLuu;
-                if (!string.IsNullOrEmpty(duongDanFileAnhMoiDuocChon))
-                {
-                    tenFileAnhDeLuu = Path.GetFileName(duongDanFileAnhMoiDuocChon);
-                    string thuMucDich = Path.Combine(Application.StartupPath, "HinhAnh");
-                    Directory.CreateDirectory(thuMucDich);
-
-                    string duongDanDich = Path.Combine(thuMucDich, tenFileAnhDeLuu);
-
-                    if (File.Exists(duongDanFileAnhMoiDuocChon))
-                    {
-                        File.Copy(duongDanFileAnhMoiDuocChon, duongDanDich, true);
-                    }
-                    else
-                    {
-                        MessageBox.Show("File ảnh không tồn tại.", "Lỗi");
-                        return;
-                    }
-                }
-                else
-                {
-                    tenFileAnhDeLuu = dgvDoUong.SelectedRows[0].Cells["HinhAnhURL"].Value?.ToString() ?? "";
-                }
-
-                doUong.CapNhatDoUong(maSanPham, tenMoi, giaMoi, maDanhMucMoi, tenFileAnhDeLuu);
-
-                duongDanFileAnhMoiDuocChon = "";
-                ToggleEditMode(false);
+                // Lần bấm 1: Chuyển sang chế độ SỬA
+                ThietLapCheDo("SUA");
+                txtTenSanPham.Focus();
             }
-            catch (Exception ex)
+            else if (cheDoHienTai == "SUA")
             {
-                MessageBox.Show($"Lỗi khi lưu: {ex.Message}");
+                // Lần bấm 2: Thực hiện LƯU (Update)
+                ThucHienLuu();
             }
         }
 
-
-        // Bật hoặc tắt chế độ chỉnh sửa cho các control
-        private void ToggleEditMode(bool editMode)
+        private string XuLyLayTenFileHinhAnh(string duongDanAnhNguon)
         {
-            txtTenSanPham.ReadOnly = !editMode;
-            txtGia.ReadOnly = !editMode;
+            if (string.IsNullOrEmpty(duongDanAnhNguon)) return "";
 
-            cmbDanhMuc.Enabled = editMode;
-            btnChonAnh.Enabled = editMode;
+            try
+            {
+                string tenFileAnh = Path.GetFileName(duongDanAnhNguon);
+                string thuMucDich = Path.Combine(Application.StartupPath, "HinhAnh");
 
-            btnSua.Text = editMode ? "Lưu" : "Sửa";
+                // Tạo thư mục nếu chưa tồn tại
+                if (!Directory.Exists(thuMucDich))
+                {
+                    Directory.CreateDirectory(thuMucDich);
+                }
 
-            isEditing = editMode;
+                string duongDanDich = Path.Combine(thuMucDich, tenFileAnh);
+
+                // Chỉ copy nếu file nguồn tồn tại
+                if (File.Exists(duongDanAnhNguon))
+                {
+                    // Overwrite = true để ghi đè nếu file đã tồn tại
+                    File.Copy(duongDanAnhNguon, duongDanDich, true);
+                    return tenFileAnh; // Trả về tên file để lưu vào DB
+                }
+                else
+                {
+                    return ""; // File nguồn không tìm thấy
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi lưu ảnh vào thư mục: {ex.Message}");
+                return "";
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            if (cheDoHienTai == "XEM")
+            {
+                // Lần bấm 1: Chuyển sang chế độ THÊM
+                ThietLapCheDo("THEM");
+                txtTenSanPham.Focus(); // Đưa con trỏ chuột vào ô tên
+            }
+            else if (cheDoHienTai == "THEM")
+            {
+                // Lần bấm 2: Thực hiện lưu vào xml
+                ThucHienLuu();
+            }
+        }
+
+        private void ThucHienLuu()
+        {
+            if (string.IsNullOrWhiteSpace(txtTenSanPham.Text))
+            {
+                MessageBox.Show("Chưa nhập tên món!");
+                txtTenSanPham.Focus();
+                return;
+            }
+            if (!decimal.TryParse(txtGia.Text, out decimal gia) || gia < 0)
+            {
+                MessageBox.Show("Giá tiền không hợp lệ!");
+                txtGia.Focus();
+                return;
+            }
+
+            try
+            {
+                string tenFileAnh = "";
+
+                // Nếu đang sửa và không chọn ảnh mới -> Lấy ảnh cũ
+                if (cheDoHienTai == "SUA" && string.IsNullOrEmpty(duongDanFileAnhMoiDuocChon))
+                {
+                    tenFileAnh = dgvDoUong.SelectedRows[0].Cells["HinhAnhURL"].Value?.ToString() ?? "";
+                }
+                else
+                {
+                    // Nếu đang thêm hoặc đang sửa mà có chọn ảnh mới -> Xử lý ảnh
+                    tenFileAnh = XuLyLayTenFileHinhAnh(duongDanFileAnhMoiDuocChon);
+                }
+
+                string tenSP = txtTenSanPham.Text;
+
+                if (cheDoHienTai == "THEM")
+                {
+                    doUong.ThemDoUong(tenSP, gia, this.maDanhMuc, tenFileAnh);
+                }
+                else if (cheDoHienTai == "SUA")
+                {
+                    int maSP = Convert.ToInt32(dgvDoUong.SelectedRows[0].Cells["MaSanPham"].Value);
+
+                    doUong.CapNhatDoUong(maSP, tenSP, gia, this.maDanhMuc, tenFileAnh);
+                }
+
+                LoadDuLieuVaoDataGridView(dgvDoUong);
+                ThietLapCheDo("XEM");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi: {ex.Message}");
+            }
+        }
+
+        private void ThietLapCheDo(string cheDo)
+        {
+            cheDoHienTai = cheDo;
+
+            // Xử lý trạng thái các ô nhập liệu (Mở khóa khi không phải chế độ XEM)
+            bool choPhepNhap = (cheDo != "XEM");
+            txtTenSanPham.ReadOnly = !choPhepNhap;
+            txtGia.ReadOnly = !choPhepNhap;
+            cmbDanhMuc.Enabled = choPhepNhap;
+            btnChonAnh.Enabled = choPhepNhap;
+
+            // Xử lý trạng thái các nút
+            switch (cheDo)
+            {
+                case "XEM":
+                    // Trạng thái bình thường
+                    btnThem.Text = "Thêm";
+                    btnSua.Text = "Sửa";
+
+                    btnThem.Enabled = true;
+                    btnSua.Enabled = true;
+
+                    // Xóa trắng các ô nhập để chờ chọn dòng mới
+                    XoaTrangForm();
+                    break;
+
+                case "THEM":
+                    // Đang thêm: Nút Thêm biến thành Lưu, Nút Sửa bị khóa
+                    btnThem.Text = "Lưu";
+                    btnSua.Enabled = false;
+
+                    // Xóa trắng form để nhập mới
+                    XoaTrangForm();
+                    break;
+
+                case "SUA":
+                    // Đang sửa: Nút Sửa biến thành Lưu, Nút Thêm bị khóa
+                    btnSua.Text = "Lưu";
+                    btnThem.Enabled = false;
+                    break;
+            }
+        }
+
+        // Hàm phụ để xóa trắng các ô nhập
+        private void XoaTrangForm()
+        {
+            txtTenSanPham.Text = "";
+            txtGia.Text = "";
+            if (picHinhAnhSanPham.Image != null) picHinhAnhSanPham.Image.Dispose();
+            picHinhAnhSanPham.Image = null;
+            duongDanFileAnhMoiDuocChon = "";
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (dgvDoUong.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn món cần xóa!");
+                return;
+            }
+
+            int maSP = Convert.ToInt32(dgvDoUong.SelectedRows[0].Cells["MaSanPham"].Value);
+            doUong.XoaDoUong(maSP);
+            LoadDuLieuVaoDataGridView(dgvDoUong);
         }
     }
 }
