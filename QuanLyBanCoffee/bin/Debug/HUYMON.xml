@@ -26,7 +26,7 @@
     <MaSanPham>5</MaSanPham>
     <SoLuong>1</SoLuong>
     <LyDo>Khách đổi món</LyDo>
-    <ThoiGianHuy>2025-11-22T16:00:00.467+07:00</ThoiGianHuy>
+    <ThoiGianHuy>2025-11-22T23:46:05.86+07:00</ThoiGianHuy>
   </_x0027_HUYMON_x0027_>
   <_x0027_HUYMON_x0027_>
     <MaHuy>2</MaHuy>
@@ -34,6 +34,86 @@
     <MaSanPham>9</MaSanPham>
     <SoLuong>1</SoLuong>
     <LyDo>Món pha nhầm</LyDo>
-    <ThoiGianHuy>2025-11-22T16:00:00.467+07:00</ThoiGianHuy>
+    <ThoiGianHuy>2025-11-22T23:46:05.86+07:00</ThoiGianHuy>
+  </_x0027_HUYMON_x0027_>
+  <_x0027_HUYMON_x0027_>
+    <MaHuy>3</MaHuy>
+    <MaOder>28</MaOder>
+    <MaSanPham>11</MaSanPham>
+    <SoLuong>1</SoLuong>
+    <LyDo>Khách đổi món</LyDo>
+    <ThoiGianHuy>2025-03-13T13:00:00+07:00</ThoiGianHuy>
+  </_x0027_HUYMON_x0027_>
+  <_x0027_HUYMON_x0027_>
+    <MaHuy>4</MaHuy>
+    <MaOder>29</MaOder>
+    <MaSanPham>1</MaSanPham>
+    <SoLuong>1</SoLuong>
+    <LyDo>Khách đổi món</LyDo>
+    <ThoiGianHuy>2025-03-13T13:00:00+07:00</ThoiGianHuy>
+  </_x0027_HUYMON_x0027_>
+  <_x0027_HUYMON_x0027_>
+    <MaHuy>5</MaHuy>
+    <MaOder>30</MaOder>
+    <MaSanPham>2</MaSanPham>
+    <SoLuong>1</SoLuong>
+    <LyDo>Khách đổi món</LyDo>
+    <ThoiGianHuy>2025-06-13T13:00:00+07:00</ThoiGianHuy>
+  </_x0027_HUYMON_x0027_>
+  <_x0027_HUYMON_x0027_>
+    <MaHuy>6</MaHuy>
+    <MaOder>32</MaOder>
+    <MaSanPham>8</MaSanPham>
+    <SoLuong>2</SoLuong>
+    <LyDo>huy</LyDo>
+    <ThoiGianHuy>2025-11-22T23:55:52.187+07:00</ThoiGianHuy>
+  </_x0027_HUYMON_x0027_>
+  <_x0027_HUYMON_x0027_>
+    <MaHuy>7</MaHuy>
+    <MaOder>32</MaOder>
+    <MaSanPham>3</MaSanPham>
+    <SoLuong>1</SoLuong>
+    <LyDo>huy</LyDo>
+    <ThoiGianHuy>2025-11-22T23:56:48.017+07:00</ThoiGianHuy>
+  </_x0027_HUYMON_x0027_>
+  <_x0027_HUYMON_x0027_>
+    <MaHuy>8</MaHuy>
+    <MaOder>32</MaOder>
+    <MaSanPham>4</MaSanPham>
+    <SoLuong>2</SoLuong>
+    <LyDo>đ</LyDo>
+    <ThoiGianHuy>2025-11-22T23:59:15.247+07:00</ThoiGianHuy>
+  </_x0027_HUYMON_x0027_>
+  <_x0027_HUYMON_x0027_>
+    <MaHuy>9</MaHuy>
+    <MaOder>32</MaOder>
+    <MaSanPham>4</MaSanPham>
+    <SoLuong>1</SoLuong>
+    <LyDo>huy</LyDo>
+    <ThoiGianHuy>2025-11-23T00:01:38.327+07:00</ThoiGianHuy>
+  </_x0027_HUYMON_x0027_>
+  <_x0027_HUYMON_x0027_>
+    <MaHuy>10</MaHuy>
+    <MaOder>33</MaOder>
+    <MaSanPham>8</MaSanPham>
+    <SoLuong>1</SoLuong>
+    <LyDo>h</LyDo>
+    <ThoiGianHuy>2025-11-23T00:05:55.1+07:00</ThoiGianHuy>
+  </_x0027_HUYMON_x0027_>
+  <_x0027_HUYMON_x0027_>
+    <MaHuy>11</MaHuy>
+    <MaOder>32</MaOder>
+    <MaSanPham>8</MaSanPham>
+    <SoLuong>1</SoLuong>
+    <LyDo />
+    <ThoiGianHuy>2025-11-23T00:11:10.957+07:00</ThoiGianHuy>
+  </_x0027_HUYMON_x0027_>
+  <_x0027_HUYMON_x0027_>
+    <MaHuy>12</MaHuy>
+    <MaOder>34</MaOder>
+    <MaSanPham>3</MaSanPham>
+    <SoLuong>1</SoLuong>
+    <LyDo>1</LyDo>
+    <ThoiGianHuy>2025-11-23T00:12:22.5753273+07:00</ThoiGianHuy>
   </_x0027_HUYMON_x0027_>
 </NewDataSet>

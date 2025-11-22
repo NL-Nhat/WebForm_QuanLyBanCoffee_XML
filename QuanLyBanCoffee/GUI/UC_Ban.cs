@@ -13,6 +13,7 @@ namespace QuanLyBanCoffee.GUI
         private Ban ban = new Ban();
         private Order order = new Order();
         private NhanVien nhanVien = new NhanVien();
+
         private int maNV;
         private int maBanDuocChon;
         private float tyLeChietKhau = 0.0f;
@@ -390,5 +391,56 @@ namespace QuanLyBanCoffee.GUI
             ReloadpForm(this.tenBanDuocChon, this.maNV, this.tenTangDuocChon);
         }
 
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            HuyMon huymon = new HuyMon();
+
+            if (string.IsNullOrEmpty(tenBanDuocChon) || string.IsNullOrEmpty(tenTangDuocChon))
+            {
+                MessageBox.Show("Vui lòng chọn bàn trước khi hủy món.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (dgvDSorder.DataSource == null || dgvDSorder.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có món nào để hủy.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (this.maOrder <= 0 || dgvDSorder.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn một món trong danh sách để hủy.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int maSanPham = Convert.ToInt32(dgvDSorder.SelectedRows[0].Cells["MaSanPham"].Value);
+            int soLuong = Convert.ToInt32(dgvDSorder.SelectedRows[0].Cells["SoLuong"].Value);
+
+            var result = DialogHuyMon.Show(soLuong);
+
+            if (result == null)
+            {
+                return;
+            }
+
+            if (dgvDSorder.Rows.Count == 1 && result.SoLuongHuy == soLuong)
+            {
+                huymon.ThemHuyMon(maOrder, maSanPham, result.SoLuongHuy, result.LyDo);
+                ban.CapNhatTrangThaiBan(maBanDuocChon, "Trống");
+                order.CapNhatThanhToan(maOrder, "Đã hủy", 0);
+                order.CapNhatOrder(maOrder, 0);
+                MessageBox.Show("Hủy món thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnBan_Click(flpDSBan.Controls
+                .OfType<Button>()
+                .First(b => b.Tag?.ToString() == tenBanDuocChon), EventArgs.Empty);
+            }
+            else {
+                huymon.ThemHuyMon(maOrder, maSanPham, result.SoLuongHuy, result.LyDo);
+                order.CapNhatHuyChiTietOrder(maOrder, maSanPham, result.SoLuongHuy);
+                btnBan_Click(flpDSBan.Controls
+                .OfType<Button>()
+                .First(b => b.Tag?.ToString() == tenBanDuocChon), EventArgs.Empty);
+                CalculateTotal();
+                order.CapNhatOrder(maOrder, tongTienThanhToanCuoiCung);
+            }
+        }
     }
 }

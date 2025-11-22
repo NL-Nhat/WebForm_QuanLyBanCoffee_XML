@@ -51,11 +51,14 @@
     <Compile Include="Class\BaoCao.cs" />
     <Compile Include="Class\BaoCaoDoanhThuNgay.cs" />
     <Compile Include="Class\DangNhap.cs" />
+    <Compile Include="Class\DialogHuyMon.cs" />
     <Compile Include="Class\DoUong.cs" />
     <Compile Include="Class\FileXML.cs" />
     <Compile Include="Class\HeThong.cs" />
+    <Compile Include="Class\HuyMon.cs" />
     <Compile Include="Class\NhanVien.cs" />
     <Compile Include="Class\Order.cs" />
+    <Compile Include="Class\ResultOfDialogHuyMon.cs" />
     <Compile Include="Class\TaiKhoan.cs" />
     <Compile Include="Class\ThongKeDanhMuc.cs" />
     <Compile Include="GUI\Admin\frmMainAdmin.cs">

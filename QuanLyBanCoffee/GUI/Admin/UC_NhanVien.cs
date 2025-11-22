@@ -37,6 +37,7 @@ namespace QuanLyBanCoffee.GUI.Admin
         {
             SetupDataGridView(dgvNhanVien);
             LoadDuLieu();
+            ThietLapCheDo("XEM");
         }
 
         private void SetupDataGridView(DataGridView dgv)
@@ -314,6 +315,8 @@ namespace QuanLyBanCoffee.GUI.Admin
                     // Đang sửa: Nút Sửa biến thành Lưu, Nút Thêm bị khóa
                     btnSua.Text = "Lưu";
                     btnThem.Enabled = false;
+                    txtTenDangNhap.ReadOnly = true;
+                    txtMatKhau.ReadOnly = true;
                     break;
             }
         }

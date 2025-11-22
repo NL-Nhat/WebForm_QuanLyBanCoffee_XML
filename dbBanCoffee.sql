@@ -77,6 +77,7 @@ CREATE TABLE CHITIETODER (
     MaSanPham INT NOT NULL,
     SoLuong INT CHECK (SoLuong > 0) NOT NULL,
     DonGia DECIMAL(18,2) NOT NULL,
+    TrangThai NVARCHAR(50) CHECK (TrangThai IN (N'Chưa thanh toán', N'Đã thanh toán', N'Đã huỷ')) DEFAULT N'Chưa thanh toán',
     FOREIGN KEY (MaOder) REFERENCES ODER(MaOder) on delete cascade on update cascade,
     FOREIGN KEY (MaSanPham) REFERENCES SANPHAM(MaSanPham) on delete cascade on update cascade
 );
@@ -84,6 +85,7 @@ CREATE TABLE HUYMON (
     MaHuy INT IDENTITY(1,1) PRIMARY KEY,
     MaOder INT NOT NULL,
     MaSanPham INT NOT NULL,
+    SoLuong int not null default 1 check(SoLuong >0),
     LyDo NVARCHAR(200),
     ThoiGianHuy DATETIME DEFAULT GETDATE(),
     FOREIGN KEY (MaOder) REFERENCES ODER(MaOder) on delete cascade on update cascade,
@@ -224,7 +226,6 @@ VALUES
 (10, 15, 1, 55000),
 (11, 15, 2, 55000)
 
--- Huỷ món: khớp các order có trạng thái 'Đã huỷ'
 INSERT INTO HUYMON (MaOder, MaSanPham, LyDo)
 VALUES
 (7, 5, N'Khách đổi món'),
@@ -235,11 +236,79 @@ update ban
 set TrangThai = N'Có khách'
 where MaBan in (1,3,5,10)
 
+INSERT INTO ODER (MaBan, MaNhanVien, ThoiGianBatDau, ThoiGianThanhToan, TongTien, TrangThai)
+VALUES
+(11, 2, '2025-11-20 10:00:00', '2025-3-20 10:30:00', 200000, N'Đã thanh toán'),
+(12, 2, '2025-11-19 14:15:00', '2025-3-19 14:45:00', 150000, N'Đã thanh toán'), 
+(13, 2, '2025-11-18 09:30:00', '2025-4-18 10:05:00', 185000, N'Đã thanh toán'), 
+(14, 2, '2025-11-20 16:00:00', '2025-9-20 16:25:00', 90000, N'Đã thanh toán'), 
+(15, 2, '2025-11-17 11:00:00', '2025-1-17 11:40:00', 110000, N'Đã thanh toán'),
+(16, 2, '2025-11-16 19:00:00', '2025-1-16 19:20:00', 135000, N'Đã thanh toán'),
+(17, 3, '2025-11-15 08:45:00', '2025-1-15 09:15:00', 88000, N'Đã thanh toán'),
+(18, 3, '2025-11-14 12:30:00', '2025-3-14 13:10:00', 210000, N'Đã thanh toán'),
+(19, 3, '2025-11-13 20:00:00', '2025-3-13 20:45:00', 145000, N'Đã thanh toán'),
+(20, 4, '2025-11-19 07:00:00', '2025-4-19 07:35:00', 75000, N'Đã thanh toán'), 
+(1, 4, '2025-11-20 06:10:00', '2025-4-20 06:40:00', 160000, N'Đã thanh toán'), 
+(2, 5, '2025-11-12 15:00:00', '2025-10-12 15:25:00', 125000, N'Đã thanh toán'),
+(3, 5, '2025-11-11 17:30:00', '2025-10-11 18:00:00', 100000, N'Đã thanh toán'),
+(4, 5, '2025-11-10 10:00:00', '2025-10-10 10:30:00', 195000, N'Đã thanh toán'),
+(6, 5, '2025-11-10 14:00:00', '2025-10-10 14:35:00', 130000, N'Đã thanh toán'),
+(5, 6, '2025-11-18 21:00:00', '2025-5-18 21:30:00', 170000, N'Đã thanh toán'),
+(7, 6, '2025-11-17 18:00:00', '2025-11-17 18:40:00', 99000, N'Đã thanh toán'), 
+(8, 6, '2025-2-15 11:30:00', NULL, 0, N'Đã huỷ'),
+(9, 2, '2025-2-14 09:00:00', NULL, 0, N'Đã huỷ'), 
+(10, 3, '2025-2-13 13:00:00', NULL, 0, N'Đã huỷ');              
+
+INSERT INTO CHITIETODER (MaOder, MaSanPham, SoLuong, DonGia)
+VALUES
+(12, 1, 3, 30000),
+(12, 3, 1, 110000),
+(13, 4, 2, 75000), 
+(14, 5, 1, 45000),
+(14, 7, 2, 70000),
+(15, 8, 1, 40000),
+(15, 10, 1, 50000),
+(16, 11, 1, 110000),
+(17, 12, 1, 35000),
+(17, 13, 2, 50000), 
+(18, 14, 1, 88000), 
+(19, 15, 3, 70000),
+(20, 1, 2, 72500),
+(21, 2, 1, 30000),
+(21, 3, 1, 45000), 
+(22, 4, 2, 80000), 
+(23, 5, 2, 62500), 
+(24, 6, 1, 100000), 
+(25, 7, 1, 195000),
+(26, 8, 2, 65000),
+(27, 9, 2, 85000),
+(27, 10, 1, 0), 
+(28, 11, 1, 99000),
+(29, 1, 1, 30000), 
+(30, 2, 2, 60000),
+(31, 3, 1, 110000);
+
+INSERT INTO HUYMON (MaOder, MaSanPham, LyDo, ThoiGianHuy)
+VALUES
+(28, 11, N'Khách đổi món', '2025-3-13 13:00:00'),
+(29, 1, N'Khách đổi món', '2025-3-13 13:00:00'),
+(30, 2, N'Khách đổi món', '2025-6-13 13:00:00');
+
+-- Cập nhật trạng thái trong CHITIETODER dựa trên trạng thái của ODER
+
+UPDATE CTO
+SET CTO.TrangThai = O.TrangThai  -- Lấy trạng thái từ bảng ODER
+FROM CHITIETODER CTO
+INNER JOIN ODER O ON CTO.MaOder = O.MaOder
+WHERE O.TrangThai = N'Đã huỷ' or O.TrangThai = N'Đã thanh toán' ;
+
+
+
 select *from ODER
 select *from CHITIETODER
 select *from SANPHAM
 select *from BAN
-select *from DANHMUC
+select *from DANHMUC    
 select *from TAIKHOAN
 select *from NHANVIEN
 select *from HUYMON

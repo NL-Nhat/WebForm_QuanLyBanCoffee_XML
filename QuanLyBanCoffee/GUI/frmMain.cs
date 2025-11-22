@@ -9,16 +9,13 @@ namespace QuanLyBanCoffee
 {
     public partial class frmMain : Form
     {
-        private FileXml fileXml;
-        private HeThong ht;
-        private DangNhap dn;
+        private HeThong ht = new HeThong();
+        private DangNhap dn = new DangNhap();
 
         public frmMain()
         {
             InitializeComponent();
-            fileXml = new FileXml();
-            ht = new HeThong();
-            dn = new DangNhap();
+            this.AcceptButton = btnDangNhap; // Đặt btnDangNhap làm nút mặc định khi nhấn Enter
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
@@ -87,6 +84,8 @@ namespace QuanLyBanCoffee
             if (e.KeyCode == Keys.Enter)
             {
                 btnDangNhap_Click(sender, e);
+                e.Handled = true;
+                e.SuppressKeyPress = true;
             }
         }
 

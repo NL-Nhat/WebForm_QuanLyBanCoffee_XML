@@ -26,8 +26,8 @@
     <MaOder>1</MaOder>
     <MaBan>1</MaBan>
     <MaNhanVien>2</MaNhanVien>
-    <ThoiGianBatDau>2025-11-22T16:00:00.46+07:00</ThoiGianBatDau>
-    <ThoiGianThanhToan>2025-11-22T16:30:00.46+07:00</ThoiGianThanhToan>
+    <ThoiGianBatDau>2025-11-22T23:46:05.853+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-11-23T00:16:05.853+07:00</ThoiGianThanhToan>
     <ChietKhau>0</ChietKhau>
     <TongTien>120000.00</TongTien>
     <TrangThai>Đã thanh toán</TrangThai>
@@ -36,8 +36,8 @@
     <MaOder>2</MaOder>
     <MaBan>2</MaBan>
     <MaNhanVien>3</MaNhanVien>
-    <ThoiGianBatDau>2025-11-22T16:00:00.46+07:00</ThoiGianBatDau>
-    <ThoiGianThanhToan>2025-11-22T16:25:00.46+07:00</ThoiGianThanhToan>
+    <ThoiGianBatDau>2025-11-22T23:46:05.853+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-11-23T00:11:05.853+07:00</ThoiGianThanhToan>
     <ChietKhau>0</ChietKhau>
     <TongTien>95000.00</TongTien>
     <TrangThai>Đã thanh toán</TrangThai>
@@ -46,7 +46,7 @@
     <MaOder>3</MaOder>
     <MaBan>3</MaBan>
     <MaNhanVien>4</MaNhanVien>
-    <ThoiGianBatDau>2025-11-22T16:00:00.46+07:00</ThoiGianBatDau>
+    <ThoiGianBatDau>2025-11-22T23:46:05.853+07:00</ThoiGianBatDau>
     <ChietKhau>0</ChietKhau>
     <TongTien>0.00</TongTien>
     <TrangThai>Chưa thanh toán</TrangThai>
@@ -55,8 +55,8 @@
     <MaOder>4</MaOder>
     <MaBan>4</MaBan>
     <MaNhanVien>5</MaNhanVien>
-    <ThoiGianBatDau>2025-11-22T16:00:00.46+07:00</ThoiGianBatDau>
-    <ThoiGianThanhToan>2025-11-22T16:15:00.46+07:00</ThoiGianThanhToan>
+    <ThoiGianBatDau>2025-11-22T23:46:05.853+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-11-23T00:01:05.853+07:00</ThoiGianThanhToan>
     <ChietKhau>0</ChietKhau>
     <TongTien>80000.00</TongTien>
     <TrangThai>Đã thanh toán</TrangThai>
@@ -65,18 +65,17 @@
     <MaOder>5</MaOder>
     <MaBan>5</MaBan>
     <MaNhanVien>1</MaNhanVien>
-    <ThoiGianBatDau>2025-11-22T16:00:00.46+07:00</ThoiGianBatDau>
-    <ThoiGianThanhToan>2025-11-22T16:54:45.9597718+07:00</ThoiGianThanhToan>
+    <ThoiGianBatDau>2025-11-22T23:46:05.853+07:00</ThoiGianBatDau>
     <ChietKhau>0</ChietKhau>
-    <TongTien>80000.00</TongTien>
-    <TrangThai>Đã thanh toán</TrangThai>
+    <TongTien>0.00</TongTien>
+    <TrangThai>Chưa thanh toán</TrangThai>
   </_x0027_ODER_x0027_>
   <_x0027_ODER_x0027_>
     <MaOder>6</MaOder>
     <MaBan>6</MaBan>
     <MaNhanVien>2</MaNhanVien>
-    <ThoiGianBatDau>2025-11-22T16:00:00.46+07:00</ThoiGianBatDau>
-    <ThoiGianThanhToan>2025-11-22T16:20:00.46+07:00</ThoiGianThanhToan>
+    <ThoiGianBatDau>2025-11-22T23:46:05.853+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-11-23T00:06:05.853+07:00</ThoiGianThanhToan>
     <ChietKhau>0</ChietKhau>
     <TongTien>65000.00</TongTien>
     <TrangThai>Đã thanh toán</TrangThai>
@@ -85,7 +84,7 @@
     <MaOder>7</MaOder>
     <MaBan>7</MaBan>
     <MaNhanVien>3</MaNhanVien>
-    <ThoiGianBatDau>2025-11-22T16:00:00.46+07:00</ThoiGianBatDau>
+    <ThoiGianBatDau>2025-11-22T23:46:05.853+07:00</ThoiGianBatDau>
     <ChietKhau>0</ChietKhau>
     <TongTien>0.00</TongTien>
     <TrangThai>Đã huỷ</TrangThai>
@@ -94,7 +93,7 @@
     <MaOder>8</MaOder>
     <MaBan>8</MaBan>
     <MaNhanVien>4</MaNhanVien>
-    <ThoiGianBatDau>2025-11-22T16:00:00.46+07:00</ThoiGianBatDau>
+    <ThoiGianBatDau>2025-11-22T23:46:05.853+07:00</ThoiGianBatDau>
     <ChietKhau>0</ChietKhau>
     <TongTien>0.00</TongTien>
     <TrangThai>Đã huỷ</TrangThai>
@@ -103,8 +102,8 @@
     <MaOder>9</MaOder>
     <MaBan>9</MaBan>
     <MaNhanVien>5</MaNhanVien>
-    <ThoiGianBatDau>2025-11-22T16:00:00.46+07:00</ThoiGianBatDau>
-    <ThoiGianThanhToan>2025-11-22T16:40:00.46+07:00</ThoiGianThanhToan>
+    <ThoiGianBatDau>2025-11-22T23:46:05.853+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-11-23T00:26:05.853+07:00</ThoiGianThanhToan>
     <ChietKhau>0</ChietKhau>
     <TongTien>105000.00</TongTien>
     <TrangThai>Đã thanh toán</TrangThai>
@@ -113,7 +112,7 @@
     <MaOder>10</MaOder>
     <MaBan>10</MaBan>
     <MaNhanVien>1</MaNhanVien>
-    <ThoiGianBatDau>2025-11-22T16:00:00.46+07:00</ThoiGianBatDau>
+    <ThoiGianBatDau>2025-11-22T23:46:05.853+07:00</ThoiGianBatDau>
     <ChietKhau>0</ChietKhau>
     <TongTien>0.00</TongTien>
     <TrangThai>Chưa thanh toán</TrangThai>
@@ -122,9 +121,234 @@
     <MaOder>11</MaOder>
     <MaBan>1</MaBan>
     <MaNhanVien>2</MaNhanVien>
-    <ThoiGianBatDau>2025-11-22T16:00:00.46+07:00</ThoiGianBatDau>
+    <ThoiGianBatDau>2025-11-22T23:46:05.853+07:00</ThoiGianBatDau>
     <ChietKhau>0</ChietKhau>
     <TongTien>110000.00</TongTien>
+    <TrangThai>Chưa thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>12</MaOder>
+    <MaBan>11</MaBan>
+    <MaNhanVien>2</MaNhanVien>
+    <ThoiGianBatDau>2025-11-20T10:00:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-03-20T10:30:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>200000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>13</MaOder>
+    <MaBan>12</MaBan>
+    <MaNhanVien>2</MaNhanVien>
+    <ThoiGianBatDau>2025-11-19T14:15:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-03-19T14:45:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>150000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>14</MaOder>
+    <MaBan>13</MaBan>
+    <MaNhanVien>2</MaNhanVien>
+    <ThoiGianBatDau>2025-11-18T09:30:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-04-18T10:05:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>185000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>15</MaOder>
+    <MaBan>14</MaBan>
+    <MaNhanVien>2</MaNhanVien>
+    <ThoiGianBatDau>2025-11-20T16:00:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-09-20T16:25:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>90000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>16</MaOder>
+    <MaBan>15</MaBan>
+    <MaNhanVien>2</MaNhanVien>
+    <ThoiGianBatDau>2025-11-17T11:00:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-01-17T11:40:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>110000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>17</MaOder>
+    <MaBan>16</MaBan>
+    <MaNhanVien>2</MaNhanVien>
+    <ThoiGianBatDau>2025-11-16T19:00:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-01-16T19:20:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>135000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>18</MaOder>
+    <MaBan>17</MaBan>
+    <MaNhanVien>3</MaNhanVien>
+    <ThoiGianBatDau>2025-11-15T08:45:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-01-15T09:15:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>88000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>19</MaOder>
+    <MaBan>18</MaBan>
+    <MaNhanVien>3</MaNhanVien>
+    <ThoiGianBatDau>2025-11-14T12:30:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-03-14T13:10:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>210000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>20</MaOder>
+    <MaBan>19</MaBan>
+    <MaNhanVien>3</MaNhanVien>
+    <ThoiGianBatDau>2025-11-13T20:00:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-03-13T20:45:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>145000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>21</MaOder>
+    <MaBan>20</MaBan>
+    <MaNhanVien>4</MaNhanVien>
+    <ThoiGianBatDau>2025-11-19T07:00:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-04-19T07:35:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>75000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>22</MaOder>
+    <MaBan>1</MaBan>
+    <MaNhanVien>4</MaNhanVien>
+    <ThoiGianBatDau>2025-11-20T06:10:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-04-20T06:40:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>160000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>23</MaOder>
+    <MaBan>2</MaBan>
+    <MaNhanVien>5</MaNhanVien>
+    <ThoiGianBatDau>2025-11-12T15:00:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-10-12T15:25:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>125000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>24</MaOder>
+    <MaBan>3</MaBan>
+    <MaNhanVien>5</MaNhanVien>
+    <ThoiGianBatDau>2025-11-11T17:30:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-10-11T18:00:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>100000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>25</MaOder>
+    <MaBan>4</MaBan>
+    <MaNhanVien>5</MaNhanVien>
+    <ThoiGianBatDau>2025-11-10T10:00:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-10-10T10:30:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>195000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>26</MaOder>
+    <MaBan>6</MaBan>
+    <MaNhanVien>5</MaNhanVien>
+    <ThoiGianBatDau>2025-11-10T14:00:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-10-10T14:35:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>130000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>27</MaOder>
+    <MaBan>5</MaBan>
+    <MaNhanVien>6</MaNhanVien>
+    <ThoiGianBatDau>2025-11-18T21:00:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-05-18T21:30:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>170000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>28</MaOder>
+    <MaBan>7</MaBan>
+    <MaNhanVien>6</MaNhanVien>
+    <ThoiGianBatDau>2025-11-17T18:00:00+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-11-17T18:40:00+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>99000.00</TongTien>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>29</MaOder>
+    <MaBan>8</MaBan>
+    <MaNhanVien>6</MaNhanVien>
+    <ThoiGianBatDau>2025-02-15T11:30:00+07:00</ThoiGianBatDau>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>0.00</TongTien>
+    <TrangThai>Đã huỷ</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>30</MaOder>
+    <MaBan>9</MaBan>
+    <MaNhanVien>2</MaNhanVien>
+    <ThoiGianBatDau>2025-02-14T09:00:00+07:00</ThoiGianBatDau>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>0.00</TongTien>
+    <TrangThai>Đã huỷ</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>31</MaOder>
+    <MaBan>10</MaBan>
+    <MaNhanVien>3</MaNhanVien>
+    <ThoiGianBatDau>2025-02-13T13:00:00+07:00</ThoiGianBatDau>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>0.00</TongTien>
+    <TrangThai>Đã huỷ</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>32</MaOder>
+    <MaBan>9</MaBan>
+    <MaNhanVien>2</MaNhanVien>
+    <ThoiGianBatDau>2025-11-22T23:55:16.207+07:00</ThoiGianBatDau>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>0.00</TongTien>
+    <TrangThai>Chưa thanh toán</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>33</MaOder>
+    <MaBan>2</MaBan>
+    <MaNhanVien>2</MaNhanVien>
+    <ThoiGianBatDau>2025-11-23T00:05:32.857+07:00</ThoiGianBatDau>
+    <ThoiGianThanhToan>2025-11-23T00:05:55.107+07:00</ThoiGianThanhToan>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>45000.00</TongTien>
+    <TrangThai>Đã hủy</TrangThai>
+  </_x0027_ODER_x0027_>
+  <_x0027_ODER_x0027_>
+    <MaOder>34</MaOder>
+    <MaBan>2</MaBan>
+    <MaNhanVien>2</MaNhanVien>
+    <ThoiGianBatDau>2025-11-23T00:11:56.9196765+07:00</ThoiGianBatDau>
+    <ChietKhau>0</ChietKhau>
+    <TongTien>103000.00</TongTien>
     <TrangThai>Chưa thanh toán</TrangThai>
   </_x0027_ODER_x0027_>
 </NewDataSet>

@@ -115,6 +115,7 @@
             this.btnHuy.TabIndex = 24;
             this.btnHuy.Text = "Hủy món";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnThanhToan
             // 

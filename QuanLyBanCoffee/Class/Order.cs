@@ -41,7 +41,7 @@ namespace QuanLyBanCoffee.Class
 
                 DateTime thoiGianBatDau = Convert.ToDateTime(orderRow["ThoiGianBatDau"]);
 
-                DataRow[] chiTietRows = dtChiTietOrder.Select($"MaOder = {maOrder}");
+                DataRow[] chiTietRows = dtChiTietOrder.Select($"MaOder = {maOrder} AND TrangThai = 'Chưa thanh toán'");
                 foreach (DataRow chiTietRow in chiTietRows)
                 {
                     DataRow newRow = resultTable.NewRow();
@@ -183,6 +183,7 @@ namespace QuanLyBanCoffee.Class
                 newRow["MaSanPham"] = maSanPham;
                 newRow["SoLuong"] = soLuong;
                 newRow["DonGia"] = donGia;
+                newRow["TrangThai"] = "Chưa thanh toán";
                 table.Rows.Add(newRow);
                 fileXml.Luu("CHITIETODER.xml", table);
             }
@@ -239,6 +240,8 @@ namespace QuanLyBanCoffee.Class
             try
             {
                 DataTable table = fileXml.HienThi("ODER.xml");
+                DataTable table2 = fileXml.HienThi("CHITIETODER.xml");
+
                 foreach (DataRow row in table.Rows)
                 {
                     if (Convert.ToInt32(row["MaOder"]) == maOrder)
@@ -249,11 +252,74 @@ namespace QuanLyBanCoffee.Class
                         break;
                     }
                 }
+
+                foreach (DataRow row in table2.Rows)
+                {
+                    if (Convert.ToInt32(row["MaOder"]) == maOrder && row["TrangThai"].ToString() != "Đã hủy")
+                    {
+                        row["TrangThai"] = trangthai;
+                    }
+                }
+                fileXml.Luu("CHITIETODER.xml", table2);
                 fileXml.Luu("ODER.xml", table);
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Lỗi khi cập nhật thanh toán: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void CapNhatHuyChiTietOrder(int maOrder, int maSanPham, int soLuongHuy)
+        {
+            try
+            {
+                DataTable ctOrderTable = fileXml.HienThi("CHITIETODER.xml");
+
+                // Tìm dòng chi tiết order hiện tại
+                DataRow row = ctOrderTable.AsEnumerable()
+                    .FirstOrDefault(r => Convert.ToInt32(r["MaOder"]) == maOrder &&
+                                         Convert.ToInt32(r["MaSanPham"]) == maSanPham &&
+                                         r["TrangThai"].ToString() == "Chưa thanh toán");
+
+                if (row == null)
+                {
+                    MessageBox.Show("Không tìm thấy món cần hủy trong order.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                int soLuongHienCo = Convert.ToInt32(row["SoLuong"]);
+
+                // Nếu hủy hết chuyển trạng thái dòng hiện tại thành Đã hủy
+                if (soLuongHuy == soLuongHienCo)
+                {
+                    row["TrangThai"] = "Đã hủy";
+                }
+                else
+                {
+                    // Nếu hủy một phần -> tách dòng
+                    // cập nhật số lượng dòng cũ còn lại
+                    row["SoLuong"] = soLuongHienCo - soLuongHuy;
+
+                    // tạo mã chi tiết mới
+                    int newMaCT = LayMaCTOrderTiepTheo();
+
+                    DataRow newRow = ctOrderTable.NewRow();
+                    newRow["MaCTOder"] = newMaCT;
+                    newRow["MaOder"] = maOrder;
+                    newRow["MaSanPham"] = maSanPham;
+                    newRow["SoLuong"] = soLuongHuy;
+                    newRow["DonGia"] = Convert.ToDecimal(row["DonGia"]);
+                    newRow["TrangThai"] = "Đã hủy";
+                    ctOrderTable.Rows.Add(newRow);
+                }
+
+                fileXml.Luu("CHITIETODER.xml", ctOrderTable);
+
+                MessageBox.Show("Hủy món thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi hủy món: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
