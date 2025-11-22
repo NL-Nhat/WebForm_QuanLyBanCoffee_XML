@@ -18,3 +18,4 @@ D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoff
 D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.GUI.Admin.frmMainAdmin.resources
 D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.GUI.Admin.UC_DoUong.resources
 D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.GUI.Admin.UC_NhanVien.resources
+D:\Myself\University\XML\QuanLyBanCoffee\QuanLyBanCoffee\obj\Debug\QuanLyBanCoffee.GUI.Admin.UC_BaoCao.resources

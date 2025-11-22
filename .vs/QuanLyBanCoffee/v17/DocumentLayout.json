@@ -3,20 +3,68 @@
   "WorkspaceRootPath": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\class\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\class\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|d:\\myself\\university\\xml\\quanlybancoffee\\quanlybancoffee\\gui\\admin\\uc_baocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\admin\\uc_baocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|d:\\myself\\university\\xml\\quanlybancoffee\\quanlybancoffee\\gui\\admin\\uc_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\gui\\admin\\uc_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\admin\\uc_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\gui\\admin\\frmmainadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\admin\\frmmainadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\gui\\admin\\frmmainadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\admin\\frmmainadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|d:\\myself\\university\\xml\\quanlybancoffee\\quanlybancoffee\\gui\\admin\\uc_baocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\admin\\uc_baocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|d:\\myself\\university\\xml\\quanlybancoffee\\quanlybancoffee\\class\\baocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\class\\baocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\class\\baocaodoanhthungay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\class\\baocaodoanhthungay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\gui\\admin\\uc_douong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\admin\\uc_douong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\class\\thongkedanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\class\\thongkedanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\class\\filexml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\class\\filexml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\class\\hethong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\class\\hethong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\gui\\admin\\uc_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\admin\\uc_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|d:\\myself\\university\\xml\\quanlybancoffee\\quanlybancoffee\\gui\\admin\\uc_douong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\gui\\admin\\uc_douong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\admin\\uc_douong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|d:\\myself\\university\\xml\\quanlybancoffee\\quanlybancoffee\\gui\\admin\\uc_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\admin\\uc_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|d:\\myself\\university\\xml\\quanlybancoffee\\quanlybancoffee\\class\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\class\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|d:\\myself\\university\\xml\\quanlybancoffee\\quanlybancoffee\\class\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\class\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\gui\\uc_doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -43,30 +91,6 @@
       "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\uc_ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\gui\\admin\\uc_douong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\admin\\uc_douong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\class\\filexml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\class\\filexml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\gui\\admin\\frmmainadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\admin\\frmmainadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\gui\\admin\\frmmainadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\admin\\frmmainadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\class\\hethong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\class\\hethong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\gui\\frmban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\frmban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -75,20 +99,12 @@
       "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\frmban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\class\\baocaodoanhthungay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\class\\baocaodoanhthungay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\class\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\class\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\class\\thongkedanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|solutionrelative:quanlybancoffee\\class\\thongkedanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F78DF25F-7DE0-42FE-A1E0-92E1F9A0BCEA}|QuanLyBanCoffee\\QuanLyBanCoffee.csproj|D:\\Myself\\University\\XML\\QuanLyBanCoffee\\quanlybancoffee\\class\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -142,20 +158,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UC_NhanVien.cs",
-              "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\Admin\\UC_NhanVien.cs",
-              "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\Admin\\UC_NhanVien.cs",
-              "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\Admin\\UC_NhanVien.cs",
-              "RelativeToolTip": "QuanLyBanCoffee\\GUI\\Admin\\UC_NhanVien.cs",
-              "ViewState": "AgIAANkAAAAAAAAAAAAiwNQAAAANAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UC_BaoCao.cs",
+              "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\Admin\\UC_BaoCao.cs",
+              "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\Admin\\UC_BaoCao.cs",
+              "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\Admin\\UC_BaoCao.cs",
+              "RelativeToolTip": "QuanLyBanCoffee\\GUI\\Admin\\UC_BaoCao.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T14:33:04.209Z",
+              "WhenOpened": "2025-11-22T09:27:43.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "BaoCao.cs",
+              "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\Class\\BaoCao.cs",
+              "RelativeDocumentMoniker": "QuanLyBanCoffee\\Class\\BaoCao.cs",
+              "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\Class\\BaoCao.cs",
+              "RelativeToolTip": "QuanLyBanCoffee\\Class\\BaoCao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T09:16:03.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UC_BaoCao.cs [Design]",
+              "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\Admin\\UC_BaoCao.cs",
+              "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\Admin\\UC_BaoCao.cs",
+              "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\Admin\\UC_BaoCao.cs [Design]",
+              "RelativeToolTip": "QuanLyBanCoffee\\GUI\\Admin\\UC_BaoCao.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T09:01:31.209Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UC_NhanVien.cs [Design]",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\Admin\\UC_NhanVien.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\Admin\\UC_NhanVien.cs",
@@ -167,33 +208,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 15,
               "Title": "NhanVien.cs",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\Class\\NhanVien.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\Class\\NhanVien.cs",
               "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\Class\\NhanVien.cs",
               "RelativeToolTip": "QuanLyBanCoffee\\Class\\NhanVien.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAcwFcAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAYwLQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T16:37:41.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
+              "Title": "TaiKhoan.cs",
+              "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\Class\\TaiKhoan.cs",
+              "RelativeDocumentMoniker": "QuanLyBanCoffee\\Class\\TaiKhoan.cs",
+              "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\Class\\TaiKhoan.cs",
+              "RelativeToolTip": "QuanLyBanCoffee\\Class\\TaiKhoan.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAAAGEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T07:39:29.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UC_NhanVien.cs",
+              "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\Admin\\UC_NhanVien.cs",
+              "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\Admin\\UC_NhanVien.cs",
+              "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\Admin\\UC_NhanVien.cs",
+              "RelativeToolTip": "QuanLyBanCoffee\\GUI\\Admin\\UC_NhanVien.cs",
+              "ViewState": "AgIAABsBAAAAAAAAAAAYwC4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T14:33:04.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "UC_DoUong.cs",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\Admin\\UC_DoUong.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\Admin\\UC_DoUong.cs",
               "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\Admin\\UC_DoUong.cs",
               "RelativeToolTip": "QuanLyBanCoffee\\GUI\\Admin\\UC_DoUong.cs",
-              "ViewState": "AgIAAHABAAAAAAAAAAAmwIcBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAA1wCQAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T16:37:00.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "UC_Ban.cs",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\UC_Ban.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\UC_Ban.cs",
@@ -201,12 +268,11 @@
               "RelativeToolTip": "QuanLyBanCoffee\\GUI\\UC_Ban.cs",
               "ViewState": "AgIAAJEAAAAAAAAAAAAAAKgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T15:06:56.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T15:06:56.334Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "UC_DoUong.cs [Design]",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\Admin\\UC_DoUong.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\Admin\\UC_DoUong.cs",
@@ -218,20 +284,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "frmMainAdmin.cs",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\Admin\\frmMainAdmin.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\Admin\\frmMainAdmin.cs",
               "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\Admin\\frmMainAdmin.cs",
               "RelativeToolTip": "QuanLyBanCoffee\\GUI\\Admin\\frmMainAdmin.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAQwDcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAswFEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T15:01:11.848Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
               "Title": "frmMainAdmin.cs [Design]",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\Admin\\frmMainAdmin.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\Admin\\frmMainAdmin.cs",
@@ -243,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "DangNhap.cs",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\Class\\DangNhap.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\Class\\DangNhap.cs",
@@ -255,32 +321,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "FileXML.cs",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\Class\\FileXML.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\Class\\FileXML.cs",
               "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\Class\\FileXML.cs",
               "RelativeToolTip": "QuanLyBanCoffee\\Class\\FileXML.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAA/wDgAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwAoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T13:59:06.895Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 11,
               "Title": "frmMain.cs",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\frmMain.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\frmMain.cs",
               "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\frmMain.cs",
               "RelativeToolTip": "QuanLyBanCoffee\\GUI\\frmMain.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAADIAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAYwDIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T13:58:17.045Z"
+              "WhenOpened": "2025-11-17T13:58:17.045Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "frmBan.cs",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\frmBan.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\frmBan.cs",
@@ -292,31 +359,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 6,
               "Title": "BaoCaoDoanhThuNgay.cs",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\Class\\BaoCaoDoanhThuNgay.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\Class\\BaoCaoDoanhThuNgay.cs",
               "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\Class\\BaoCaoDoanhThuNgay.cs",
               "RelativeToolTip": "QuanLyBanCoffee\\Class\\BaoCaoDoanhThuNgay.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T13:27:50.843Z"
+              "WhenOpened": "2025-11-17T13:27:50.843Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 8,
               "Title": "ThongKeDanhMuc.cs",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\Class\\ThongKeDanhMuc.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\Class\\ThongKeDanhMuc.cs",
               "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\Class\\ThongKeDanhMuc.cs",
               "RelativeToolTip": "QuanLyBanCoffee\\Class\\ThongKeDanhMuc.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T13:27:29.461Z"
+              "WhenOpened": "2025-11-17T13:27:29.461Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
               "Title": "UC_DoanhThu.cs",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\UC_DoanhThu.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\UC_DoanhThu.cs",
@@ -324,37 +393,35 @@
               "RelativeToolTip": "QuanLyBanCoffee\\GUI\\UC_DoanhThu.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAkwDkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T13:27:05.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T13:27:05.448Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "UC_DoanhThu.cs [Design]",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\UC_DoanhThu.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\UC_DoanhThu.cs",
               "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\UC_DoanhThu.cs [Design]",
               "RelativeToolTip": "QuanLyBanCoffee\\GUI\\UC_DoanhThu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T13:26:39.005Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-17T13:26:39.005Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 10,
               "Title": "HeThong.cs",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\Class\\HeThong.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\Class\\HeThong.cs",
               "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\Class\\HeThong.cs",
               "RelativeToolTip": "QuanLyBanCoffee\\Class\\HeThong.cs",
-              "ViewState": "AgIAALIAAAAAAAAAAAAAAMcAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAYwGkAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T13:15:01.62Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\Class\\Order.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\Class\\Order.cs",
@@ -366,19 +433,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 19,
               "Title": "UC_DSDH.cs [Design]",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\UC_DSDH.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\UC_DSDH.cs",
               "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\UC_DSDH.cs [Design]",
               "RelativeToolTip": "QuanLyBanCoffee\\GUI\\UC_DSDH.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T13:12:05.009Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-17T13:12:05.009Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "ProductCard.cs [Design]",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\ProductCard.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\ProductCard.cs",
@@ -389,42 +455,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 21,
               "Title": "UC_Ban.cs [Design]",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\UC_Ban.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\UC_Ban.cs",
               "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\UC_Ban.cs [Design]",
               "RelativeToolTip": "QuanLyBanCoffee\\GUI\\UC_Ban.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T13:12:02.267Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-17T13:12:02.267Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 20,
               "Title": "frmOrder.cs [Design]",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\frmOrder.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\frmOrder.cs",
               "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\frmOrder.cs [Design]",
               "RelativeToolTip": "QuanLyBanCoffee\\GUI\\frmOrder.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T13:12:01.055Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-17T13:12:01.055Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "frmMain.cs [Design]",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\frmMain.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\frmMain.cs",
               "ToolTip": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\frmMain.cs [Design]",
               "RelativeToolTip": "QuanLyBanCoffee\\GUI\\frmMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T13:12:00.218Z"
+              "WhenOpened": "2025-11-17T13:12:00.218Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "frmBan.cs [Design]",
               "DocumentMoniker": "D:\\Myself\\University\\XML\\QuanLyBanCoffee\\QuanLyBanCoffee\\GUI\\frmBan.cs",
               "RelativeDocumentMoniker": "QuanLyBanCoffee\\GUI\\frmBan.cs",

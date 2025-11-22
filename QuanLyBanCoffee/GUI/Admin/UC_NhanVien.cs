@@ -20,6 +20,13 @@ namespace QuanLyBanCoffee.GUI.Admin
 
         // Biến lưu trạng thái hiện tại: "XEM", "THEM", "SUA"
         private string cheDoHienTai = "XEM";
+        private int maNV = -1;
+        private int maNV_DangNhap = -1;
+
+        public UC_NhanVien(int maNV_DangNhap) : this()
+        {
+            this.maNV_DangNhap = maNV_DangNhap;
+        }
 
         public UC_NhanVien()
         {
@@ -145,10 +152,16 @@ namespace QuanLyBanCoffee.GUI.Admin
 
         private void dgvNhanVien_SelectionChanged(object sender, EventArgs e)
         {
+            if (cheDoHienTai == "THEM") return;
+
             if (dgvNhanVien.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = dgvNhanVien.SelectedRows[0];
                 HienThiChiTietTuRow(selectedRow);
+                if (selectedRow.Cells["MaNhanVien"].Value != null)
+                {
+                    maNV = Convert.ToInt32(selectedRow.Cells["MaNhanVien"].Value);
+                }
             }
         }
 
@@ -211,33 +224,41 @@ namespace QuanLyBanCoffee.GUI.Admin
                 txtDiaChi.Focus();
                 return;
             }
-            if (string.IsNullOrWhiteSpace(txtTenDangNhap.Text))
-            {
-                MessageBox.Show("Chưa nhập tên đăng nhập!");
-                txtTenDangNhap.Focus();
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(txtMatKhau.Text))
-            {
-                MessageBox.Show("Chưa nhập mật khẩu!");
-                txtMatKhau.Focus();
-                return;
-            }
 
             try
             {
-
-                string tenSP = txtTenDangNhap.Text;
+                string hoTen = txtHoTen.Text.Trim();
+                string gioiTinh = cmbGioiTinh.Text;
+                DateTime ngaySinh = dtpNgaySinh.Value;
+                string sdt = txtSDT.Text.Trim();
+                string diaChi = txtDiaChi.Text.Trim();
+                string vaiTro = cmbVaiTro.Text;
+                bool trangThai = cbTrangThai.Checked;
 
                 if (cheDoHienTai == "THEM")
                 {
-                    //doUong.ThemDoUong(tenSP, gia, this.maDanhMuc, tenFileAnh);
+                    if (string.IsNullOrWhiteSpace(txtTenDangNhap.Text))
+                    {
+                        MessageBox.Show("Chưa nhập tên đăng nhập!");
+                        txtTenDangNhap.Focus();
+                        return;
+                    }
+                    if (string.IsNullOrWhiteSpace(txtMatKhau.Text))
+                    {
+                        MessageBox.Show("Chưa nhập mật khẩu!");
+                        txtMatKhau.Focus();
+                        return;
+                    }
+
+                    string tenDangNhap = txtTenDangNhap.Text.Trim();
+                    string matKhau = txtMatKhau.Text.Trim();
+
+                    nhanVien.ThemNhanVienVaTaiKhoanMoi(hoTen, gioiTinh, ngaySinh, sdt, diaChi, tenDangNhap, matKhau, vaiTro, trangThai);
+
                 }
                 else if (cheDoHienTai == "SUA")
                 {
-                    //int maSP = Convert.ToInt32(dgvDoUong.SelectedRows[0].Cells["MaSanPham"].Value);
-
-                    //doUong.CapNhatDoUong(maSP, tenSP, gia, this.maDanhMuc, tenFileAnh);
+                    nhanVien.CapNhatThongTinNhanVien(maNV ,hoTen, gioiTinh, ngaySinh, sdt, diaChi, vaiTro, trangThai);
                 }
 
                 LoadDuLieu();
@@ -263,6 +284,7 @@ namespace QuanLyBanCoffee.GUI.Admin
             cmbGioiTinh.Enabled = choPhepNhap;
             cmbVaiTro.Enabled = choPhepNhap;
             cbTrangThai.Enabled = choPhepNhap;
+            dtpNgaySinh.Enabled = choPhepNhap;
 
             // Xử lý trạng thái các nút
             switch (cheDo)
@@ -304,6 +326,60 @@ namespace QuanLyBanCoffee.GUI.Admin
             txtMatKhau.Clear();
             txtHoTen.Clear();
             txtDiaChi.Clear();
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            if (cheDoHienTai == "XEM")
+            {
+                // Lần bấm 1: Chuyển sang chế độ THÊM
+                ThietLapCheDo("THEM");
+                txtHoTen.Focus(); // Đưa con trỏ chuột vào ô tên
+            }
+            else if (cheDoHienTai == "THEM")
+            {
+                // Lần bấm 2: Thực hiện lưu vào xml
+                ThucHienLuu();
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (cheDoHienTai == "XEM")
+            {
+                if (dgvNhanVien.SelectedRows.Count == 0)
+                {
+                    MessageBox.Show("Vui lòng chọn nhân viên cần sửa!");
+                    return;
+                }
+
+                // Lần bấm 1: Chuyển sang chế độ SỬA
+                ThietLapCheDo("SUA");
+                txtHoTen.Focus();
+            }
+            else if (cheDoHienTai == "SUA")
+            {
+                // Lần bấm 2: Thực hiện LƯU (Update)
+                ThucHienLuu();
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (maNV == maNV_DangNhap)
+            {
+                MessageBox.Show("Không thể xóa tài khoản đang đăng nhập!");
+                return;
+            }
+            if (dgvNhanVien.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn nhân viên cần xóa!");
+                return;
+            }
+            int maTaiKhoan = Convert.ToInt32(dgvNhanVien.SelectedRows[0].Cells["MaTaiKhoan"].Value);
+
+            nhanVien.XoaNhanVienTheoMa(maNV, maTaiKhoan);
+            LoadDuLieu();
         }
     }
 }

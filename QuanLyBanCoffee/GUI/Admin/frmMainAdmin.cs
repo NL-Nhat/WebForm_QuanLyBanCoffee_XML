@@ -64,12 +64,29 @@ namespace QuanLyBanCoffee.GUI.Admin
 
             pn_MainContent.Controls.Clear();
 
-            UC_NhanVien uc_nhanvien = new UC_NhanVien()
+            UC_NhanVien uc_nhanvien = new UC_NhanVien(manv)
             {
                 Dock = DockStyle.Fill
             };
 
             pn_MainContent.Controls.Add(uc_nhanvien);
+        }
+
+        private void mnuBaoCao_Click(object sender, EventArgs e)
+        {
+            if (pn_MainContent.Controls.Count > 0 && pn_MainContent.Controls[0] is UC_BaoCao)
+            {
+                return;
+            }
+
+            pn_MainContent.Controls.Clear();
+
+            UC_BaoCao uc_baocao = new UC_BaoCao()
+            {
+                Dock = DockStyle.Fill
+            };
+
+            pn_MainContent.Controls.Add(uc_baocao);
         }
     }
 }

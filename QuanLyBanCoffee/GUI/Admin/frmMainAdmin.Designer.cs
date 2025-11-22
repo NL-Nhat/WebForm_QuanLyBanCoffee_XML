@@ -85,6 +85,7 @@
             this.mnuBaoCao.Name = "mnuBaoCao";
             this.mnuBaoCao.Size = new System.Drawing.Size(112, 35);
             this.mnuBaoCao.Text = "Báo cáo";
+            this.mnuBaoCao.Click += new System.EventHandler(this.mnuBaoCao_Click);
             // 
             // mnuDangXuat
             // 

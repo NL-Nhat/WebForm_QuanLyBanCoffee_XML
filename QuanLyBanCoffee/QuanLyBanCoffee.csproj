@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\Ban.cs" />
+    <Compile Include="Class\BaoCao.cs" />
     <Compile Include="Class\BaoCaoDoanhThuNgay.cs" />
     <Compile Include="Class\DangNhap.cs" />
     <Compile Include="Class\DoUong.cs" />
@@ -54,12 +56,19 @@
     <Compile Include="Class\HeThong.cs" />
     <Compile Include="Class\NhanVien.cs" />
     <Compile Include="Class\Order.cs" />
+    <Compile Include="Class\TaiKhoan.cs" />
     <Compile Include="Class\ThongKeDanhMuc.cs" />
     <Compile Include="GUI\Admin\frmMainAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\Admin\frmMainAdmin.Designer.cs">
       <DependentUpon>frmMainAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Admin\UC_BaoCao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Admin\UC_BaoCao.Designer.cs">
+      <DependentUpon>UC_BaoCao.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Admin\UC_DoUong.cs">
       <SubType>UserControl</SubType>
@@ -119,6 +128,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\Admin\frmMainAdmin.resx">
       <DependentUpon>frmMainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Admin\UC_BaoCao.resx">
+      <DependentUpon>UC_BaoCao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Admin\UC_DoUong.resx">
       <DependentUpon>UC_DoUong.cs</DependentUpon>

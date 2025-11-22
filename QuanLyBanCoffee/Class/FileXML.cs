@@ -12,11 +12,10 @@ namespace QuanLyBanCoffee.Class
 {
     class FileXml
     {
-        // Chuỗi kết nối tới cơ sở dữ liệu QuanLyBanCaPhe
         private string Conn = @"Data Source=.;Initial Catalog=QuanLyBanCaPhe;Integrated Security=True;";
 
 
-        // 1. Hiển thị dữ liệu từ file XML
+        // Hiển thị dữ liệu từ file XML
         public DataTable HienThi(string file)
         {
             DataTable dt = new DataTable();
@@ -35,7 +34,7 @@ namespace QuanLyBanCoffee.Class
             return dt;
         }
 
-        // 2. Tạo file XML từ bảng trong SQL Server
+        //  Tạo file XML từ bảng trong SQL Server
         public void TaoXML(string bang)
         {
             try
@@ -54,7 +53,7 @@ namespace QuanLyBanCoffee.Class
             }
         }
 
-        // 3. Thêm dữ liệu vào file XML
+        // Thêm dữ liệu vào file XML
         public void Them(string duongDan, string noiDung)
         {
             try
@@ -76,7 +75,7 @@ namespace QuanLyBanCoffee.Class
             }
         }
 
-        // 4. Xóa dữ liệu trong file XML
+        // Xóa dữ liệu trong file XML
         public void Xoa(string duongDan, string tenBang, string xoaTheoTruong, string giaTriTruong)
         {
             try
@@ -94,7 +93,7 @@ namespace QuanLyBanCoffee.Class
             }
         }
 
-        // 5. Sửa dữ liệu trong file XML
+        // Sửa dữ liệu trong file XML
         public void Sua(string duongDan, string tenBang, string suaTheoTruong, string giaTriTruong, string noiDung)
         {
             try
@@ -106,7 +105,7 @@ namespace QuanLyBanCoffee.Class
                 XmlNode oldHang;
                 XmlElement root = doc.DocumentElement;
                 oldHang = doc.SelectSingleNode("NewDataSet/" + "_x0027_" + tenBang + "_x0027_" + "[./" + suaTheoTruong + "/text()='" + giaTriTruong + "']");
-                //  oldHang = root.SelectSingleNode("/NewDataSet/" + tenFile + "[" + suaTheoTruong + "='" + giaTriTruong + "']");
+                
                 XmlElement newhang = doc.CreateElement("_x0027_" + tenBang + "_x0027_");
                 newhang.InnerXml = noiDung;
                 root.ReplaceChild(newhang, oldHang);
@@ -130,7 +129,7 @@ namespace QuanLyBanCoffee.Class
             }
         }
 
-        // 6. Lấy giá trị từ file XML (Đã tối ưu hóa)
+        //  Lấy giá trị từ file XML
         public string LayGiaTri(string duongDan, string truongA, string giaTriA, string truongB)
         {
             string giatriB = "";
@@ -178,13 +177,13 @@ namespace QuanLyBanCoffee.Class
             }
         }
 
-        // 9. Đồng bộ dữ liệu từ file XML về SQL Server (Sử dụng SqlBulkCopy)
+        //  Đồng bộ dữ liệu từ file XML về SQL Server (Sử dụng SqlBulkCopy)
         public void DongBoSQL(string tenBang, string duongDan)
         {
             try
             {
                 DataTable dt = HienThi(duongDan);
-                if (dt.Rows.Count == 0) return; // Không có dữ liệu để đồng bộ
+                if (dt.Rows.Count == 0) return;
 
                 using (SqlBulkCopy bulkCopy = new SqlBulkCopy(Conn))
                 {

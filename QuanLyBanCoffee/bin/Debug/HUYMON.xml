@@ -10,6 +10,7 @@
                 <xs:element name="MaHuy" type="xs:int" minOccurs="0" />
                 <xs:element name="MaOder" type="xs:int" minOccurs="0" />
                 <xs:element name="MaSanPham" type="xs:int" minOccurs="0" />
+                <xs:element name="SoLuong" type="xs:int" minOccurs="0" />
                 <xs:element name="LyDo" type="xs:string" minOccurs="0" />
                 <xs:element name="ThoiGianHuy" type="xs:dateTime" minOccurs="0" />
               </xs:sequence>
@@ -23,14 +24,16 @@
     <MaHuy>1</MaHuy>
     <MaOder>7</MaOder>
     <MaSanPham>5</MaSanPham>
+    <SoLuong>1</SoLuong>
     <LyDo>Khách đổi món</LyDo>
-    <ThoiGianHuy>2025-11-18T22:02:58.827+07:00</ThoiGianHuy>
+    <ThoiGianHuy>2025-11-22T16:00:00.467+07:00</ThoiGianHuy>
   </_x0027_HUYMON_x0027_>
   <_x0027_HUYMON_x0027_>
     <MaHuy>2</MaHuy>
     <MaOder>8</MaOder>
     <MaSanPham>9</MaSanPham>
+    <SoLuong>1</SoLuong>
     <LyDo>Món pha nhầm</LyDo>
-    <ThoiGianHuy>2025-11-18T22:02:58.827+07:00</ThoiGianHuy>
+    <ThoiGianHuy>2025-11-22T16:00:00.467+07:00</ThoiGianHuy>
   </_x0027_HUYMON_x0027_>
 </NewDataSet>

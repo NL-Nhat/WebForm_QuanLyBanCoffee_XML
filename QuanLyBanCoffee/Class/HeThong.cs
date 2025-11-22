@@ -9,7 +9,7 @@ namespace QuanLyBanCoffee.Class
     {
         private FileXml fileXml = new FileXml();
 
-        // 1. Tạo file XML cho tất cả các bảng
+        // Tạo file XML cho tất cả các bảng
         public void TaoXML()
         {
             try
@@ -32,7 +32,7 @@ namespace QuanLyBanCoffee.Class
             }
         }
 
-        // 2. Đồng bộ dữ liệu từ file XML về SQL Server cho một bảng
+        //  Đồng bộ dữ liệu từ file XML về SQL Server cho một bảng
         private void CapNhapTungBang(string tenBang)
         {
             try
@@ -67,12 +67,12 @@ namespace QuanLyBanCoffee.Class
             }
         }
 
-        // 3. Đồng bộ toàn bộ dữ liệu từ file XML về SQL Server
+        //  Đồng bộ toàn bộ dữ liệu từ file XML về SQL Server
         public void CapNhapSQL()
         {
             try
             {
-                // 1. Xóa dữ liệu theo ĐÚNG THỨ TỰ (từ con lên cha)
+                //  Xóa dữ liệu theo ĐÚNG THỨ TỰ (từ con lên cha)
                 fileXml.InsertOrUpdateSQL("DELETE FROM HUYMON");
                 fileXml.InsertOrUpdateSQL("DELETE FROM CHITIETODER");
                 fileXml.InsertOrUpdateSQL("DELETE FROM ODER");
@@ -83,7 +83,7 @@ namespace QuanLyBanCoffee.Class
                 fileXml.InsertOrUpdateSQL("DELETE FROM TANG");
                 fileXml.InsertOrUpdateSQL("DELETE FROM DANHMUC");
 
-                // 2. Reset ID tự động tăng (IDENTITY) về 0 (để bản ghi tiếp theo là 1)
+                //  Reset ID tự động tăng (IDENTITY) về 0 (để bản ghi tiếp theo là 1)
                 fileXml.InsertOrUpdateSQL("DBCC CHECKIDENT ('HUYMON', RESEED, 0)");
                 fileXml.InsertOrUpdateSQL("DBCC CHECKIDENT ('CHITIETODER', RESEED, 0)");
                 fileXml.InsertOrUpdateSQL("DBCC CHECKIDENT ('ODER', RESEED, 0)");
@@ -94,7 +94,7 @@ namespace QuanLyBanCoffee.Class
                 fileXml.InsertOrUpdateSQL("DBCC CHECKIDENT ('TANG', RESEED, 0)");
                 fileXml.InsertOrUpdateSQL("DBCC CHECKIDENT ('DANHMUC', RESEED, 0)");
 
-                // Đồng bộ dữ liệu bằng SqlBulkCopy (nhanh hơn rất nhiều)
+                // Đồng bộ dữ liệu bằng SqlBulkCopy
                 fileXml.DongBoSQL("TAIKHOAN", "TAIKHOAN.xml");
                 fileXml.DongBoSQL("NHANVIEN", "NHANVIEN.xml");
                 fileXml.DongBoSQL("DANHMUC", "DANHMUC.xml");
@@ -104,8 +104,6 @@ namespace QuanLyBanCoffee.Class
                 fileXml.DongBoSQL("ODER", "ODER.xml");
                 fileXml.DongBoSQL("CHITIETODER", "CHITIETODER.xml");
                 fileXml.DongBoSQL("HUYMON", "HUYMON.xml");
-
-                MessageBox.Show("Đã đồng bộ tất cả dữ liệu từ XML về SQL Server thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -119,7 +117,6 @@ namespace QuanLyBanCoffee.Class
             var baoCao = new BaoCaoDoanhThuNgay();
             try
             {
-                // 1. Tải tất cả các bảng cần thiết từ XML
                 DataTable tbOrder = fileXml.HienThi("ODER.xml");
                 DataTable tbChiTiet = fileXml.HienThi("CHITIETODER.xml");
                 DataTable tbSanPham = fileXml.HienThi("SANPHAM.xml");
@@ -127,22 +124,21 @@ namespace QuanLyBanCoffee.Class
 
                 DateTime ngayBaoCao = ngay.Date;
 
-                // 2. Lấy danh sách các Order đã thanh toán trong ngày
+                // Lấy danh sách các Order đã thanh toán trong ngày
                 var cacOrderThanhToan = tbOrder.AsEnumerable()
                     .Where(r => r["TrangThai"].ToString() == "Đã thanh toán"
                              && r["ThoiGianThanhToan"] != DBNull.Value
                              && ((DateTime)r["ThoiGianThanhToan"]).Date == ngayBaoCao);
 
-                // 3. Tính Tổng Doanh Thu (Yêu cầu 1)
+                //  Tính Tổng Doanh Thu 
                 baoCao.TongDoanhThu = cacOrderThanhToan
                     .Sum(r => Convert.ToDecimal(r["TongTien"]));
 
                 // Lấy ID của các order đã thanh toán để tìm chi tiết món
                 var dsMaOrderThanhToan = cacOrderThanhToan
                     .Select(r => r["MaOder"].ToString())
-                    .ToHashSet(); // Dùng HashSet để kiểm tra nhanh hơn
+                    .ToHashSet(); 
 
-                // 4. Join ChiTietOder -> SanPham -> DanhMuc
 
                 // Lọc ChiTietOder dựa trên các MaOder đã thanh toán
                 var queryChiTiet = tbChiTiet.AsEnumerable()
@@ -175,10 +171,10 @@ namespace QuanLyBanCoffee.Class
                     }
                 ).ToList(); // Chuyển sang List để dùng nhiều lần
 
-                // 5. Tính Tổng Số Món (Yêu cầu 2)
+                // Tính Tổng Số Món
                 baoCao.TongSoMon = chiTietFinal.Sum(d => d.SoLuong);
 
-                // 6. Thống kê số món theo từng danh mục (Yêu cầu 3)
+                // Thống kê số món theo từng danh mục
                 baoCao.ThongKeTheoDanhMuc = chiTietFinal
                     .GroupBy(d => d.TenDanhMuc) // Nhóm theo tên danh mục
                     .Select(g => new ThongKeDanhMuc
@@ -197,14 +193,10 @@ namespace QuanLyBanCoffee.Class
                                 "Lỗi",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);
-                // Trả về một báo cáo rỗng nếu có lỗi
                 return new BaoCaoDoanhThuNgay();
             }
         }
 
-        /// <summary>
-        /// Hàm cũ của bạn, giờ sẽ gọi hàm mới với ngày hôm nay
-        /// </summary>
         public BaoCaoDoanhThuNgay DoanhThuNgayHienTai()
         {
             return LayBaoCaoDoanhThu(DateTime.Today);
