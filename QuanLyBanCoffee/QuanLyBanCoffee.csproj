@@ -121,6 +121,12 @@
     <Compile Include="GUI\UC_DoanhThu.Designer.cs">
       <DependentUpon>UC_DoanhThu.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\UC_DoiMatKhau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UC_DoiMatKhau.Designer.cs">
+      <DependentUpon>UC_DoiMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\UC_DSDH.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     <EmbeddedResource Include="GUI\UC_DoanhThu.resx">
       <DependentUpon>UC_DoanhThu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UC_DoiMatKhau.resx">
+      <DependentUpon>UC_DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\UC_DSDH.resx">
       <DependentUpon>UC_DSDH.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +195,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HoaDonTinhTien.xslt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

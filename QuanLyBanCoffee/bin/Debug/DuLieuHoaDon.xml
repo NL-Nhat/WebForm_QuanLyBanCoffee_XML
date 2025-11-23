@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HoaDonTinhTien>
+  <SoBan>Bàn 2</SoBan>
+  <Ngay>23/11/2025</Ngay>
+  <ThuNgan>Lê Văn A</ThuNgan>
+  <ThoiGianIn>20:41</ThoiGianIn>
+  <TongTien>625500.000</TongTien>
+  <ChiTiet>
+    <MatHang>
+      <Ten>Latte</Ten>
+      <SoLuong>1</SoLuong>
+      <Gia>40000.00</Gia>
+      <ThanhTien>40000.00</ThanhTien>
+    </MatHang>
+    <MatHang>
+      <Ten>Americano nóng</Ten>
+      <SoLuong>1</SoLuong>
+      <Gia>35000.00</Gia>
+      <ThanhTien>35000.00</ThanhTien>
+    </MatHang>
+    <MatHang>
+      <Ten>Cà phê sữa đá</Ten>
+      <SoLuong>1</SoLuong>
+      <Gia>28000.00</Gia>
+      <ThanhTien>28000.00</ThanhTien>
+    </MatHang>
+    <MatHang>
+      <Ten>Cà phê đen đá</Ten>
+      <SoLuong>1</SoLuong>
+      <Gia>25000.00</Gia>
+      <ThanhTien>25000.00</ThanhTien>
+    </MatHang>
+    <MatHang>
+      <Ten>Cappuccino</Ten>
+      <SoLuong>1</SoLuong>
+      <Gia>40000.00</Gia>
+      <ThanhTien>40000.00</ThanhTien>
+    </MatHang>
+    <MatHang>
+      <Ten>Espresso</Ten>
+      <SoLuong>1</SoLuong>
+      <Gia>30000.00</Gia>
+      <ThanhTien>30000.00</ThanhTien>
+    </MatHang>
+    <MatHang>
+      <Ten>Sinh tố xoài</Ten>
+      <SoLuong>2</SoLuong>
+      <Gia>42000.00</Gia>
+      <ThanhTien>84000.00</ThanhTien>
+    </MatHang>
+    <MatHang>
+      <Ten>Sinh tố dâu</Ten>
+      <SoLuong>3</SoLuong>
+      <Gia>48000.00</Gia>
+      <ThanhTien>144000.00</ThanhTien>
+    </MatHang>
+    <MatHang>
+      <Ten>Sinh tố mãng cầu</Ten>
+      <SoLuong>1</SoLuong>
+      <Gia>40000.00</Gia>
+      <ThanhTien>40000.00</ThanhTien>
+    </MatHang>
+    <MatHang>
+      <Ten>Sinh tố rau má</Ten>
+      <SoLuong>1</SoLuong>
+      <Gia>38000.00</Gia>
+      <ThanhTien>38000.00</ThanhTien>
+    </MatHang>
+    <MatHang>
+      <Ten>Sinh tố việt quất</Ten>
+      <SoLuong>2</SoLuong>
+      <Gia>52000.00</Gia>
+      <ThanhTien>104000.00</ThanhTien>
+    </MatHang>
+    <MatHang>
+      <Ten>Sinh tố cam cà rốt</Ten>
+      <SoLuong>1</SoLuong>
+      <Gia>42000.00</Gia>
+      <ThanhTien>42000.00</ThanhTien>
+    </MatHang>
+    <MatHang>
+      <Ten>Sinh tố bơ</Ten>
+      <SoLuong>1</SoLuong>
+      <Gia>45000.00</Gia>
+      <ThanhTien>45000.00</ThanhTien>
+    </MatHang>
+  </ChiTiet>
+</HoaDonTinhTien>

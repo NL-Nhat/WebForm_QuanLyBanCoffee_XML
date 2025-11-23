@@ -115,5 +115,34 @@ namespace QuanLyBanCoffee.Class
                 System.Windows.Forms.MessageBox.Show($"Lỗi khi cập nhật tài khoản: {ex.Message}", "Lỗi", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
+
+        public string TimMatKhauTheoMaNhanVien(int maNhanVien)
+        {
+            try
+            {
+                string duongDanNhanVien = "NHANVIEN.xml";
+                DataTable dtNhanVien = fileXml.HienThi(duongDanNhanVien);
+                DataRow nhanVienRow = dtNhanVien.AsEnumerable()
+                    .FirstOrDefault(r => r.Field<int>("MaNhanVien") == maNhanVien);
+                if (nhanVienRow != null)
+                {
+                    int maTaiKhoan = Convert.ToInt32(nhanVienRow["MaTaiKhoan"]);
+                    string duongDanTaiKhoan = "TAIKHOAN.xml";
+                    DataTable dtTaiKhoan = fileXml.HienThi(duongDanTaiKhoan);
+                    DataRow taiKhoanRow = dtTaiKhoan.AsEnumerable()
+                        .FirstOrDefault(r => r.Field<int>("MaTaiKhoan") == maTaiKhoan);
+                    if (taiKhoanRow != null)
+                    {
+                        return taiKhoanRow.Field<string>("MatKhau");
+                    }
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show($"Lỗi khi tìm mật khẩu theo mã nhân viên: {ex.Message}", "Lỗi", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                return null;
+            }
+        }
     }
 }

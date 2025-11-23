@@ -82,7 +82,7 @@
     <MaSanPham>10</MaSanPham>
     <SoLuong>1</SoLuong>
     <DonGia>30000.00</DonGia>
-    <TrangThai>Chưa thanh toán</TrangThai>
+    <TrangThai>Đã thanh toán</TrangThai>
   </_x0027_CHITIETODER_x0027_>
   <_x0027_CHITIETODER_x0027_>
     <MaCTOder>9</MaCTOder>
@@ -90,7 +90,7 @@
     <MaSanPham>13</MaSanPham>
     <SoLuong>2</SoLuong>
     <DonGia>40000.00</DonGia>
-    <TrangThai>Chưa thanh toán</TrangThai>
+    <TrangThai>Đã thanh toán</TrangThai>
   </_x0027_CHITIETODER_x0027_>
   <_x0027_CHITIETODER_x0027_>
     <MaCTOder>10</MaCTOder>
@@ -319,89 +319,105 @@
   <_x0027_CHITIETODER_x0027_>
     <MaCTOder>38</MaCTOder>
     <MaOder>32</MaOder>
-    <MaSanPham>8</MaSanPham>
+    <MaSanPham>4</MaSanPham>
     <SoLuong>1</SoLuong>
-    <DonGia>45000.00</DonGia>
-    <TrangThai>Đã hủy</TrangThai>
+    <DonGia>40000.00</DonGia>
+    <TrangThai>Đã thanh toán</TrangThai>
   </_x0027_CHITIETODER_x0027_>
   <_x0027_CHITIETODER_x0027_>
     <MaCTOder>39</MaCTOder>
     <MaOder>32</MaOder>
-    <MaSanPham>4</MaSanPham>
+    <MaSanPham>3</MaSanPham>
     <SoLuong>1</SoLuong>
-    <DonGia>40000.00</DonGia>
-    <TrangThai>Đã hủy</TrangThai>
+    <DonGia>35000.00</DonGia>
+    <TrangThai>Đã thanh toán</TrangThai>
   </_x0027_CHITIETODER_x0027_>
   <_x0027_CHITIETODER_x0027_>
     <MaCTOder>40</MaCTOder>
     <MaOder>32</MaOder>
-    <MaSanPham>3</MaSanPham>
+    <MaSanPham>2</MaSanPham>
     <SoLuong>1</SoLuong>
-    <DonGia>35000.00</DonGia>
-    <TrangThai>Đã hủy</TrangThai>
+    <DonGia>28000.00</DonGia>
+    <TrangThai>Đã thanh toán</TrangThai>
   </_x0027_CHITIETODER_x0027_>
   <_x0027_CHITIETODER_x0027_>
     <MaCTOder>41</MaCTOder>
     <MaOder>32</MaOder>
-    <MaSanPham>8</MaSanPham>
-    <SoLuong>2</SoLuong>
-    <DonGia>45000.00</DonGia>
-    <TrangThai>Đã hủy</TrangThai>
+    <MaSanPham>1</MaSanPham>
+    <SoLuong>1</SoLuong>
+    <DonGia>25000.00</DonGia>
+    <TrangThai>Đã thanh toán</TrangThai>
   </_x0027_CHITIETODER_x0027_>
   <_x0027_CHITIETODER_x0027_>
     <MaCTOder>42</MaCTOder>
     <MaOder>32</MaOder>
-    <MaSanPham>7</MaSanPham>
+    <MaSanPham>5</MaSanPham>
     <SoLuong>1</SoLuong>
-    <DonGia>32000.00</DonGia>
-    <TrangThai>Chưa thanh toán</TrangThai>
+    <DonGia>40000.00</DonGia>
+    <TrangThai>Đã thanh toán</TrangThai>
   </_x0027_CHITIETODER_x0027_>
   <_x0027_CHITIETODER_x0027_>
     <MaCTOder>43</MaCTOder>
     <MaOder>32</MaOder>
-    <MaSanPham>4</MaSanPham>
-    <SoLuong>2</SoLuong>
-    <DonGia>40000.00</DonGia>
-    <TrangThai>Đã hủy</TrangThai>
+    <MaSanPham>6</MaSanPham>
+    <SoLuong>1</SoLuong>
+    <DonGia>30000.00</DonGia>
+    <TrangThai>Đã thanh toán</TrangThai>
   </_x0027_CHITIETODER_x0027_>
   <_x0027_CHITIETODER_x0027_>
     <MaCTOder>44</MaCTOder>
-    <MaOder>33</MaOder>
-    <MaSanPham>8</MaSanPham>
-    <SoLuong>1</SoLuong>
-    <DonGia>45000.00</DonGia>
-    <TrangThai>Đã hủy</TrangThai>
+    <MaOder>32</MaOder>
+    <MaSanPham>12</MaSanPham>
+    <SoLuong>2</SoLuong>
+    <DonGia>42000.00</DonGia>
+    <TrangThai>Đã thanh toán</TrangThai>
   </_x0027_CHITIETODER_x0027_>
   <_x0027_CHITIETODER_x0027_>
     <MaCTOder>45</MaCTOder>
-    <MaOder>34</MaOder>
-    <MaSanPham>3</MaSanPham>
-    <SoLuong>1</SoLuong>
-    <DonGia>35000.00</DonGia>
-    <TrangThai>Chưa thanh toán</TrangThai>
+    <MaOder>32</MaOder>
+    <MaSanPham>13</MaSanPham>
+    <SoLuong>3</SoLuong>
+    <DonGia>48000.00</DonGia>
+    <TrangThai>Đã thanh toán</TrangThai>
   </_x0027_CHITIETODER_x0027_>
   <_x0027_CHITIETODER_x0027_>
     <MaCTOder>46</MaCTOder>
-    <MaOder>34</MaOder>
-    <MaSanPham>4</MaSanPham>
+    <MaOder>32</MaOder>
+    <MaSanPham>14</MaSanPham>
     <SoLuong>1</SoLuong>
     <DonGia>40000.00</DonGia>
-    <TrangThai>Chưa thanh toán</TrangThai>
+    <TrangThai>Đã thanh toán</TrangThai>
   </_x0027_CHITIETODER_x0027_>
   <_x0027_CHITIETODER_x0027_>
     <MaCTOder>47</MaCTOder>
-    <MaOder>34</MaOder>
-    <MaSanPham>2</MaSanPham>
+    <MaOder>32</MaOder>
+    <MaSanPham>18</MaSanPham>
     <SoLuong>1</SoLuong>
-    <DonGia>28000.00</DonGia>
-    <TrangThai>Chưa thanh toán</TrangThai>
+    <DonGia>38000.00</DonGia>
+    <TrangThai>Đã thanh toán</TrangThai>
   </_x0027_CHITIETODER_x0027_>
   <_x0027_CHITIETODER_x0027_>
     <MaCTOder>48</MaCTOder>
-    <MaOder>34</MaOder>
-    <MaSanPham>3</MaSanPham>
+    <MaOder>32</MaOder>
+    <MaSanPham>17</MaSanPham>
+    <SoLuong>2</SoLuong>
+    <DonGia>52000.00</DonGia>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_CHITIETODER_x0027_>
+  <_x0027_CHITIETODER_x0027_>
+    <MaCTOder>49</MaCTOder>
+    <MaOder>32</MaOder>
+    <MaSanPham>16</MaSanPham>
     <SoLuong>1</SoLuong>
-    <DonGia>35000.00</DonGia>
-    <TrangThai>Đã hủy</TrangThai>
+    <DonGia>42000.00</DonGia>
+    <TrangThai>Đã thanh toán</TrangThai>
+  </_x0027_CHITIETODER_x0027_>
+  <_x0027_CHITIETODER_x0027_>
+    <MaCTOder>50</MaCTOder>
+    <MaOder>32</MaOder>
+    <MaSanPham>11</MaSanPham>
+    <SoLuong>1</SoLuong>
+    <DonGia>45000.00</DonGia>
+    <TrangThai>Đã thanh toán</TrangThai>
   </_x0027_CHITIETODER_x0027_>
 </NewDataSet>

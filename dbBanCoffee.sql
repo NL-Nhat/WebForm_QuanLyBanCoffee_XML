@@ -303,7 +303,6 @@ INNER JOIN ODER O ON CTO.MaOder = O.MaOder
 WHERE O.TrangThai = N'Đã huỷ' or O.TrangThai = N'Đã thanh toán' ;
 
 
-
 select *from ODER
 select *from CHITIETODER
 select *from SANPHAM

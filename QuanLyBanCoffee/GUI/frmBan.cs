@@ -1,4 +1,5 @@
 ﻿using QuanLyBanCoffee.Class;
+using QuanLyBanCoffee.GUI.Admin;
 using System;
 using System.Data;
 using System.Drawing;
@@ -65,6 +66,10 @@ namespace QuanLyBanCoffee.GUI
 
         private void mnuDSDH_Click(object sender, EventArgs e)
         {
+            if (pn_MainContent.Controls.Count > 0 && pn_MainContent.Controls[0] is UC_DSDH)
+            {
+                return;
+            }
             // Xóa hết các control hiện có trong panel
             pn_MainContent.Controls.Clear();
 
@@ -80,17 +85,32 @@ namespace QuanLyBanCoffee.GUI
 
         private void mnuDoanhThu_Click(object sender, EventArgs e)
         {
-            // Xóa hết các control hiện có trong panel
+            if (pn_MainContent.Controls.Count > 0 && pn_MainContent.Controls[0] is UC_DoanhThu)
+            {
+                return;
+            }
             pn_MainContent.Controls.Clear();
 
-            // Khởi tạo UserControl mới
             UC_DoanhThu ucDoanhThu = new UC_DoanhThu
             {
-                Dock = DockStyle.Fill  // cho UC fill toàn bộ panel
+                Dock = DockStyle.Fill  
             };
 
-            // Thêm vào panel
             pn_MainContent.Controls.Add(ucDoanhThu);
+        }
+
+        private void mnuDoiMatKhau_Click(object sender, EventArgs e)
+        {
+            if (pn_MainContent.Controls.Count > 0 && pn_MainContent.Controls[0] is UC_DoiMatKhau)
+            {
+                return;
+            }
+            pn_MainContent.Controls.Clear();
+            UC_DoiMatKhau ucDoiMatKhau = new UC_DoiMatKhau(maNV)
+            {
+                Dock = DockStyle.Fill 
+            };
+            pn_MainContent.Controls.Add(ucDoiMatKhau);
         }
     }
 }

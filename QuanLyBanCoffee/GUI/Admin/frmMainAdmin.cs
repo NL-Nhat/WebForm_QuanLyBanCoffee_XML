@@ -88,5 +88,19 @@ namespace QuanLyBanCoffee.GUI.Admin
 
             pn_MainContent.Controls.Add(uc_baocao);
         }
+
+        private void mnuDoiMatKhau_Click(object sender, EventArgs e)
+        {
+            if (pn_MainContent.Controls.Count > 0 && pn_MainContent.Controls[0] is UC_DoiMatKhau)
+            {
+                return;
+            }
+            pn_MainContent.Controls.Clear();
+            UC_DoiMatKhau uc_doimatkhau = new UC_DoiMatKhau(manv)
+            {
+                Dock = DockStyle.Fill
+            };
+            pn_MainContent.Controls.Add(uc_doimatkhau);
+        }
     }
 }

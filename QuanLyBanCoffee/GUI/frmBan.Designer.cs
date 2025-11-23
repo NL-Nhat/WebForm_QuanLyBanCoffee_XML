@@ -32,6 +32,7 @@ namespace QuanLyBanCoffee.GUI
             this.mnuDangXuat = new System.Windows.Forms.ToolStripMenuItem();
             this.lbNV = new System.Windows.Forms.Label();
             this.pn_MainContent = new System.Windows.Forms.Panel();
+            this.mnuDoiMatKhau = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,6 +45,7 @@ namespace QuanLyBanCoffee.GUI
             this.mnuOrder,
             this.mnuDoanhThu,
             this.mnuDSDH,
+            this.mnuDoiMatKhau,
             this.mnuDangXuat});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -101,6 +103,14 @@ namespace QuanLyBanCoffee.GUI
             this.pn_MainContent.Size = new System.Drawing.Size(1252, 624);
             this.pn_MainContent.TabIndex = 11;
             // 
+            // mnuDoiMatKhau
+            // 
+            this.mnuDoiMatKhau.ForeColor = System.Drawing.Color.White;
+            this.mnuDoiMatKhau.Name = "mnuDoiMatKhau";
+            this.mnuDoiMatKhau.Size = new System.Drawing.Size(173, 35);
+            this.mnuDoiMatKhau.Text = "Đổi mật khẩu";
+            this.mnuDoiMatKhau.Click += new System.EventHandler(this.mnuDoiMatKhau_Click);
+            // 
             // frmBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -129,5 +139,6 @@ namespace QuanLyBanCoffee.GUI
         private Label lbNV;
         private Panel pn_MainContent;
         private ToolStripMenuItem mnuDSDH;
+        private ToolStripMenuItem mnuDoiMatKhau;
     }
 }

@@ -36,6 +36,7 @@
             this.mnuDangXuat = new System.Windows.Forms.ToolStripMenuItem();
             this.lbNV = new System.Windows.Forms.Label();
             this.lbAdmin = new System.Windows.Forms.Label();
+            this.mnuDoiMatKhau = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +57,7 @@
             this.mnuDoUong,
             this.mnuNhanVien,
             this.mnuBaoCao,
+            this.mnuDoiMatKhau,
             this.mnuDangXuat});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -115,6 +117,14 @@
             this.lbAdmin.TabIndex = 15;
             this.lbAdmin.Text = "Admin";
             // 
+            // mnuDoiMatKhau
+            // 
+            this.mnuDoiMatKhau.ForeColor = System.Drawing.Color.White;
+            this.mnuDoiMatKhau.Name = "mnuDoiMatKhau";
+            this.mnuDoiMatKhau.Size = new System.Drawing.Size(173, 35);
+            this.mnuDoiMatKhau.Text = "Đổi mật khẩu";
+            this.mnuDoiMatKhau.Click += new System.EventHandler(this.mnuDoiMatKhau_Click);
+            // 
             // frmMainAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -144,5 +154,6 @@
         private System.Windows.Forms.ToolStripMenuItem mnuNhanVien;
         private System.Windows.Forms.ToolStripMenuItem mnuBaoCao;
         private System.Windows.Forms.Label lbAdmin;
+        private System.Windows.Forms.ToolStripMenuItem mnuDoiMatKhau;
     }
 }

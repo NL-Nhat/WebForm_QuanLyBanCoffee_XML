@@ -1,9 +1,13 @@
 ﻿using QuanLyBanCoffee.Class;
 using System;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using System.Xml.Xsl;
+using System.IO;
 
 namespace QuanLyBanCoffee.GUI
 {
@@ -383,12 +387,46 @@ namespace QuanLyBanCoffee.GUI
 
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
-            order.CapNhatOrder(maOrder, tongTienThanhToanCuoiCung);
-            order.CapNhatThanhToan(maOrder, "Đã thanh toán", tyLeChietKhau);
-            ban.CapNhatTrangThaiBan(maBanDuocChon, "Trống");
-            MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        
-            ReloadpForm(this.tenBanDuocChon, this.maNV, this.tenTangDuocChon);
+            if (string.IsNullOrEmpty(tenBanDuocChon) || string.IsNullOrEmpty(tenTangDuocChon))
+            {
+                MessageBox.Show("Vui lòng chọn bàn trước khi thanh toán.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (dgvDSorder.Rows.Count == 0)
+            {
+                MessageBox.Show("Bàn này chưa có món nào để thanh toán!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Hỏi người dùng có muốn xuất hóa đơn không
+            DialogResult result = MessageBox.Show("Bạn có muốn in hóa đơn không?", "Xác nhận thanh toán", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Cancel)
+            {
+                return; // Hủy thao tác thanh toán
+            }
+
+            // Nếu chọn Yes thì thực hiện in
+            if (result == DialogResult.Yes)
+            {
+                string tenNV = nhanVien.TimTenNhanVienTheoMa(this.maNV);
+                XuatHoaDon(this.maOrder, this.tenBanDuocChon, tenNV, DateTime.Now);
+            }
+
+            try
+            {
+                order.CapNhatOrder(maOrder, tongTienThanhToanCuoiCung);
+                order.CapNhatThanhToan(maOrder, "Đã thanh toán", tyLeChietKhau);
+                ban.CapNhatTrangThaiBan(maBanDuocChon, "Trống");
+
+                MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                ReloadpForm(this.tenBanDuocChon, this.maNV, this.tenTangDuocChon);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi cập nhật thanh toán: {ex.Message}", "Lỗi Database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -428,9 +466,7 @@ namespace QuanLyBanCoffee.GUI
                 order.CapNhatThanhToan(maOrder, "Đã hủy", 0);
                 order.CapNhatOrder(maOrder, 0);
                 MessageBox.Show("Hủy món thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                btnBan_Click(flpDSBan.Controls
-                .OfType<Button>()
-                .First(b => b.Tag?.ToString() == tenBanDuocChon), EventArgs.Empty);
+                ReloadpForm(this.tenBanDuocChon, this.maNV, this.tenTangDuocChon);
             }
             else {
                 huymon.ThemHuyMon(maOrder, maSanPham, result.SoLuongHuy, result.LyDo);
@@ -440,6 +476,66 @@ namespace QuanLyBanCoffee.GUI
                 .First(b => b.Tag?.ToString() == tenBanDuocChon), EventArgs.Empty);
                 CalculateTotal();
                 order.CapNhatOrder(maOrder, tongTienThanhToanCuoiCung);
+            }
+        }
+
+
+        private void XuatHoaDon(int maHoaDon, string tenBan, string tenNhanVien, DateTime ngayGio)
+        {
+            try
+            {
+                XElement xmlHoaDon = new XElement("HoaDonTinhTien",
+                    new XElement("SoBan", tenBan),
+                    new XElement("Ngay", ngayGio.ToString("dd/MM/yyyy")),
+                    new XElement("ThuNgan", tenNhanVien),
+                    new XElement("ThoiGianIn", ngayGio.ToString("HH:mm")),
+                    new XElement("TongTien", this.tongTienThanhToanCuoiCung),
+                    new XElement("ChiTiet")
+                );
+
+                // Duyệt qua DataGridView để lấy danh sách món
+                foreach (DataGridViewRow row in dgvDSorder.Rows)
+                {
+                    string tenMon = row.Cells["TenMon"].Value.ToString();
+                    int soLuong = Convert.ToInt32(row.Cells["SoLuong"].Value);
+                    decimal thanhTien = Convert.ToDecimal(row.Cells["ThanhTien"].Value);
+
+                    decimal donGia = soLuong > 0 ? thanhTien / soLuong : 0;
+
+                    xmlHoaDon.Element("ChiTiet").Add(
+                        new XElement("MatHang",
+                            new XElement("Ten", tenMon),
+                            new XElement("SoLuong", soLuong),
+                            new XElement("Gia", donGia),
+                            new XElement("ThanhTien", thanhTien)
+                        )
+                    );
+                }
+
+                // Lưu file XML tạm
+                string pathXML = Path.Combine(Application.StartupPath, "DuLieuHoaDon.xml");
+                xmlHoaDon.Save(pathXML);
+
+                // Thực hiện Transform qua XSLT
+                string pathXSLT = Path.Combine(Application.StartupPath, "HoaDonTinhTien.xslt");
+                string pathHTML = Path.Combine(Application.StartupPath, $"HoaDonTinhTien_{maHoaDon}_{DateTime.Now.Ticks}.html");
+
+                if (!File.Exists(pathXSLT))
+                {
+                    MessageBox.Show($"Không tìm thấy file mẫu in tại: {pathXSLT}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                XslCompiledTransform xslt = new XslCompiledTransform();
+                xslt.Load(pathXSLT);
+                xslt.Transform(pathXML, pathHTML);
+
+                // Mở file HTML lên trình duyệt
+                Process.Start(new ProcessStartInfo(pathHTML) { UseShellExecute = true });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi xuất hóa đơn: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
